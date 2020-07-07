@@ -10,7 +10,12 @@ class ReviewsController < ApplicationController
   def create
     shelter = Shelter.find(params[:id])
     new_review = shelter.reviews.create(review_params)
+    if shelter.save
     redirect_to("/shelters/#{shelter.id}")
+    else
+      flash[:notice] = "Error, you are missing information, Please fill out form completely"
+      redirect_to("/shelters/#{shelter.id}/reviews/new")
+    end
   end
 
   private
