@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
+</head>
+<body id="pet_show">
+
+  <header>
+    <h1><%= @pet.name.upcase %></h1>
+    <nav>
+    <h3><%= link_to "ALL PETS", "/pets" %></h3>
+    <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+    </nav>
+</header>
+
+<div><%= image_tag(@pet.image, method: :get) %></div>
+
+<div id="attributes">
+  <ul>
+    <li>NAME:<p><%= @pet.name %></p></li>
+    <li>DESCRIPTION: <p><%= @pet.description %></p></li>
+    <li>APPROXIMATE AGE:<p> <%= @pet.approx_age %></p></li>
+    <li>SEX: <p><%= @pet.sex %></p></li>
+    <li>ADOPTION STATUS: <p><%= @pet.adoption_status %></p></li>
+  </ul>
+  <h5><%= link_to "EDIT #{@pet.name.upcase}'S INFO", "#{@pet.id}/edit"  %></h5>
+  <h5><%= link_to "DELETE #{@pet.name.upcase}", "#{@pet.id}", method: :delete%></h5>
+</div>
+</body>

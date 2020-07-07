@@ -1,0 +1,40 @@
+
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
+</head>
+<body id="edit">
+
+<header>
+<h1>ADD A PET</h1>
+<nav>
+<h3><%= link_to "ALL PETS", "/pets" %></h3>
+<h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+</nav>
+</header>
+
+<%= form_tag "/shelters/#{@shelter_id}/pets", method: :post do %>
+  <p>
+  <%= label_tag :image %>
+  <p>
+  <%= text_field_tag :image %>
+  <p>
+  <%= label_tag :name %>
+  <p>
+  <%= text_field_tag :name %>
+  <p>
+  <%= label_tag :description %>
+  <p>
+  <%= text_field_tag :description %>
+  <p>
+  <%= label_tag :approx_age %>
+  <p>
+  <%= text_field_tag :approx_age %>
+  <p>
+  <%= label_tag :sex %>
+  <p>
+  <%= text_field_tag :sex %>
+  <p>
+  <%= hidden_field_tag :adoption_status, "Adoptable" %>
+  <p>
+  <%= submit_tag "Create Pet" %>
+<% end %>

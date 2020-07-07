@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
+</head>
+
+<body id="shelter_show">
+<header>
+  <h1><%= @shelter.name.upcase %></h1>
+  <nav>
+  <h3><%= link_to "ALL PETS", "/pets" %></h3>
+  <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+
+  </nav>
+</header>
+
+<div id="attributes">
+  <ul>
+    <li>ADDRESS<p><%= @shelter.address %></p></li>
+    <li>CITY<p><%= @shelter.city %></p></li>
+    <li>STATE<p><%= @shelter.state %></p></li>
+    <li>ZIP<p><%= @shelter.zip %></p></li>
+  </ul>
+
+  <h3><%= link_to "#{@shelter.name.upcase}'S PET INDEX", "/shelters/#{@shelter.id}/pets" %></h3>
+
+  <h5><%= link_to "UPDATE SHELTER", "#{@shelter.id}/edit"  %></h5>
+  <h5><%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %></h5>
+</div>
+</body>

@@ -1,0 +1,26 @@
+<head>
+  <title>All Pets</title>
+  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
+</head>
+<body>
+
+  <header>
+    <h1>PET INDEX</h1>
+    <nav><h3><%= link_to "ALL SHELTERS", "/shelters" %></h3></nav>
+  </header>
+
+<section id="pets_index">
+<ul id="pet_index_list"><% @pets.each do |pet| %>
+  <li>
+    <%= image_tag(pet.image, :size => "260x180", method: :get) %>
+      <h2><%= link_to "#{pet.name.upcase}", "/pets/#{pet.id}" %></h2>
+      <h3>APPROXIMATE AGE: <p><%= pet.approx_age %></p></h3>
+      <h3>SEX:<p> <%= pet.sex %></p></h3>
+      <h3>SHELTER: <p><%= link_to "#{pet.shelter.name.upcase}", "/shelters/#{pet.shelter.id}" %></p></h3>
+    <h5><%= link_to "EDIT #{pet.name.upcase}'S INFO", "/pets/#{pet.id}/edit" %></h5>
+    <h5><%= link_to "DELETE #{pet.name.upcase}", "/pets/#{pet.id}", method: :delete %></h5>
+    </li>
+  <% end %>
+</ul>
+</section>
+</body>

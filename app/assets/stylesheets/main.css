@@ -1,0 +1,290 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: lightgray;
+}
+
+header{
+  background-color: olive;
+  color: white;
+  border-top: 5px;
+  border-color: white;
+  border-style: solid;
+  border-bottom-width: thick;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-top:10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+header nav {
+  margin-left:10px;
+  padding-bottom: 20px;
+}
+
+header nav h3 {
+  display:inline;
+  padding-left: 10px
+}
+
+header nav a{
+  color:white
+}
+
+header nav a:active {
+  color:white
+}
+
+#main_page_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#shelter_index {
+  background-color: darkgray;
+  border-top: 5px;
+  border-color: white;
+  border-style: solid;
+}
+
+#shelter_index ul{
+  display:inline;
+  padding-left:10px
+}
+
+#shelter_index ul li {
+  display:inline-block;
+  padding: 20px 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+#shelter_index h3 a{
+  color:white;
+}
+
+#shelter_index h3 a:active {
+  color:white;
+}
+
+#shelter_index h5 {
+  display:inline;
+  padding-right:10px;
+  text-shadow: none;
+}
+
+#shelter_index h5 a{
+  color:white;
+}
+
+#shelter_index h5 a:active{
+  color:white;
+}
+
+footer {
+  background-color:olive;
+  border-top: 5px;
+  border-color: white;
+  border-style: solid;
+}
+
+footer h3 {
+  padding-top:30px;
+  padding-bottom: 30px;
+  margin-left: 10px
+}
+
+footer h3 a{
+  color:white
+}
+
+footer h3 a:active{
+  color:white
+}
+
+#pets_index {
+  background-color: darkgray;
+  border-top: 5px;
+  border-color: white;
+  border-style: solid;
+}
+
+#pets_index ul{
+  display:inline;
+  padding-left:10px
+}
+
+#pets_index ul li {
+  display:inline-block;
+  padding: 20px 50px;
+}
+
+#pets_index ul li h3 {
+  color:black;
+  text-shadow: 3px 3px 3px olive;
+}
+
+#pets_index ul li p {
+  display:inline;
+  padding-left:4px;
+  color:black;
+  text-shadow: none;
+}
+
+#pets_index a{
+  color:white;
+}
+
+#pets_index a:active {
+  color:white;
+}
+
+#pets_index h5 {
+  display:inline;
+  padding-right: 10px;
+}
+
+#pet_show {
+  background-color: darkgray;
+}
+
+#pet_show div{
+  padding-top:15px
+}
+
+#pet_show img {
+  float:left;
+  height: 500px;
+  border-radius: 30px;
+  border-color: white;
+  border-style: solid;
+  border-width: 10px;
+  object-fit: contain;
+}
+
+#pet_show #attributes{
+  display:inline-block;
+}
+
+#pet_show #attributes ul li{
+  display:block;
+  padding-bottom:10px;
+  font-weight: bold;
+  font-size: 21px;
+  color:black;
+  text-align: center;
+  text-shadow: 5px 5px 5px olive;
+}
+
+#pet_show #attributes ul li p{
+  font-weight: bold;
+  color:black;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: none;
+}
+
+#pet_show h5 {
+  display:inline;
+  padding-left: 70px;
+  padding-top:30px
+}
+
+#pet_show h5 a{
+  color: white;
+}
+
+#shelter_show {
+  background-color: darkgray;
+}
+
+#shelter_show div{
+  padding-top:15px
+}
+
+#shelter_show #attributes{
+  display:inline-block;
+}
+
+#shelter_show #attributes ul li{
+  padding-bottom:10px;
+  font-weight: bold;
+  font-size: 25px;
+  color:black;
+  text-align: left;
+  text-shadow: 3px 3px 3px olive;
+  list-style: none
+}
+
+#shelter_show #attributes ul li p{
+  font-weight: bold;
+  color:black;
+  font-size: 18px;
+  text-shadow: none;
+  display:inline;
+  padding-left:15px;
+}
+
+#shelter_show #attributes h3 {
+  margin-left:40px;
+  text-shadow: 1px 1px 1px black;
+}
+
+#shelter_show h5 {
+  display:inline;
+  margin-left: 40px;
+  padding-top:30px
+}
+
+#shelter_show a{
+  color: white;
+}
+
+#shelter_pet_index_create_link {
+  margin-left: 60px;
+  text-shadow: 1px 1px 1px black;
+}
+
+#edit form {
+  color: black;
+  padding-left: 40px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+#edit form input{
+  width:40%;
+  height:50%;
+  padding: 15px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px 2px darkgray;
+}
+
+#edit label {
+  color:black;
+  margin-right: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px olive;
+}
+
+#edit button {
+  color:pink
+}
+
+#edit input[type=submit] {
+  color:black;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px olive;
+  padding: 15px 10px;
+  margin: 8px 0;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
+</head>
+<body id="pets_index">
+
+<header>
+  <h1><%= link_to "#{@shelter.name.upcase}:", "/shelters/#{@shelter.id}" %> ADOPTABLE PETS</h1>
+  <nav>
+    <h3><%= link_to "ALL PETS", "/pets" %></h3>
+    <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+    <h3>NUMBER OF ADOPTABLE PETS: <%= "#{@shelter.pets.count}" %></h3>
+</header>
+
+<section>
+  <ul id="shelter_pets_index_list">
+    <% @pets.each do |pet| %>
+    <li>
+      <%= image_tag(pet.image, :size => "260x180", method: :get) %>
+      <h2><%= link_to "#{pet.name.upcase}", "/pets/#{pet.id}" %></h2>
+      <h3>APPROXIMATE AGE: <p><%= pet.approx_age %></p></h3>
+      <h3>SEX: <p><%= pet.sex %></p></h3>
+      <h5><%= link_to "EDIT #{pet.name.upcase}'S INFO", "/pets/#{pet.id}/edit" %></h5>
+      <h5><%= link_to "DELETE #{pet.name.upcase}", "/pets/#{pet.id}", method: :delete %></h5>
+    <% end %>
+  </ul>
+</section>
+
+<h3 id="shelter_pet_index_create_link"><%= link_to "ADD A NEW PET TO #{@shelter.name.upcase}", "/shelters/#{@shelter.id}/pets/new" %></h3>
+</body>

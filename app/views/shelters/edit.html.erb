@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
+</head>
+<body id="edit">
+<header>
+  <h1>EDIT SHELTER INFORMATION</h1>
+  <nav>
+  <h3><%= link_to "ALL PETS", "/pets" %></h3>
+  <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+  </nav>
+</header>
+
+<%= form_tag "/shelters/#{@shelter.id}", method: :patch do %>
+  <%= label_tag :name %>
+  <p>
+  <%= text_field_tag :name, @shelter.name %>
+  <p>
+  <%= label_tag :address %>
+  <p>
+  <%= text_field_tag :address, @shelter.address %>
+  <p>
+  <%= label_tag :state %>
+  <p>
+  <%= text_field_tag :state, @shelter.state %>
+  <p>
+  <%= label_tag :city %>
+  <p>
+  <%= text_field_tag :city, @shelter.city %>
+  <p>
+  <%= label_tag :zip %>
+  <p>
+  <%= text_field_tag :zip, @shelter.zip %>
+  <p>
+  <%= submit_tag "Update Shelter Information" %>
+<% end %>
+</body>
