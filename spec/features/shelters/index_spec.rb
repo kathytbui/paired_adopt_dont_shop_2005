@@ -11,7 +11,7 @@ RSpec.describe 'Shelter Index page' do
     it "When I click the link I'm taken to a page to edit shelter's info" do
       cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
       visit '/shelters'
-      click_link "EDIT SHELTER"
+      click_link "EDIT SHELTER", exact: true
       expect(current_path).to eq("/shelters/#{cozy_kitten.id}/edit")
   end
 
@@ -19,7 +19,7 @@ RSpec.describe 'Shelter Index page' do
     it "When I click the link the shelter is deleted and I no longer see the page on the shelter index page" do
       cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
       visit '/shelters'
-      click_link "DELETE SHELTER"
+      click_link "DELETE SHELTER", exact: true
       expect(current_path).to eq("/shelters")
       expect(page).to_not have_content("Cozy Kitten Animal Shelter")
   end

@@ -32,9 +32,10 @@
   <p><%= review.rating %></p>
   <p><%= review.content %></p>
   <p><%= review.picture %></p>
+  <p><%= link_to "EDIT REVIEW", "/shelters/#{@shelter.id}/#{review.id}/edit" %></p>
   <% end %>
 
   <p><%= link_to "NEW REVIEW", "/shelters/#{@shelter.id}/reviews/new" %></p>
-  <p><%= link_to "EDIT REVIEW", "/shelters/#{@shelter.id}/reviews/#{review.id}edit" %></p>
+
 </div>
 </body>

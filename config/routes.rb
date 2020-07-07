@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   get '/shelters/:id/reviews/new', to: 'reviews#new'
-  post 'shelters/:id', to: 'reviews#create'
-  get '/shelters/:id/reviews/:id/edit', to: 'reviews#edit'
+  post '/shelters/:id', to: 'reviews#create'
+  get '/shelters/:id/:id/edit', to: 'reviews#edit'
+  patch '/shelters/:id/:id/edit', to: 'reviews#update'
 end
