@@ -24,4 +24,5 @@ RSpec.describe "Pets show page" do
     visit "/pets/#{cat1.id}"
     expect(page).to have_link("ALL SHELTERS")
   end
+
 end
