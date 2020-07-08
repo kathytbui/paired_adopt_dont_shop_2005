@@ -35,6 +35,8 @@
     <p><%= review.content %></p>
     <p><%= review.picture %></p>
     <p><%= link_to "EDIT REVIEW", "/reviews/#{review.id}/edit"  %></p>
+    <p><%= link_to "DELETE REVIEW", "/reviews/#{review.id}", method: :delete  %></p>
+
     <% end %>
 </section>
 

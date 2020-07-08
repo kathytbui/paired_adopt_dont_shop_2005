@@ -228,6 +228,7 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -469,6 +470,25 @@
           1,
           null,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/reviews/delete_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -859,7 +879,7 @@
           null,
           null,
           1,
-          15,
+          17,
           null,
           null,
           1,
@@ -985,6 +1005,12 @@
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           null,
           1,
           4,
@@ -993,6 +1019,6 @@
         ]
       }
     },
-    "timestamp": 1594243846
+    "timestamp": 1594245026
   }
 }
