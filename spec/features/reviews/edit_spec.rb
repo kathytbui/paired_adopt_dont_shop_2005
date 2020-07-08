@@ -5,14 +5,17 @@ RSpec.describe "Edit review" do
 
       visit "/shelters/#{cozy_kitten.id}"
       click_link "EDIT REVIEW", exact: true
-      expect(current_path).to eq("/shelters/#{review_1.shelter_id}/#{review_1.id}/edit")
+      expect(current_path).to eq("/shelters/#{review_1.shelter_id}/reviews/#{review_1.id}/edit")
 
-      fill_in :title, with: "Review 2", exact: true
+      fill_in :title, with: "Review 2"
 
       click_on "SUBMIT"
       expect(current_path).to eq("/shelters/#{cozy_kitten.id}")
 
+      within("#review-#{review_1.id}") do
+
       expect(page).to have_content("Review 2")
       expect(page).to_not have_content("Review 1")
+      end
     end
   end

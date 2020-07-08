@@ -26,16 +26,25 @@
   <h5><%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %></h5>
 </div>
 
-<div class="">
+<div>
   <% @shelter.reviews.each do |review| %>
+  <section id= <%= "review-#{review.id}" %>>
   <p><%= review.title %></p>
   <p><%= review.rating %></p>
   <p><%= review.content %></p>
   <p><%= review.picture %></p>
-  <p><%= link_to "EDIT REVIEW", "/shelters/#{@shelter.id}/#{review.id}/edit" %></p>
+  <p><%= link_to "EDIT REVIEW", "/shelters/#{@shelter.id}/reviews/#{review.id}/edit" %></p>
+  </section>
   <% end %>
 
   <p><%= link_to "NEW REVIEW", "/shelters/#{@shelter.id}/reviews/new" %></p>
+
+  <% @shelter.pets.each do |pet| %>
+      <br>
+      <ul>
+        <li><%= link_to pet.name, “/pets/#{pet.id}” %></li>
+      </ul>
+      <% end %>
 
 </div>
 </body>
