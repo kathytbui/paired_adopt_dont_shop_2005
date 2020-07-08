@@ -24,4 +24,21 @@ RSpec.describe "Edit a review" do
     expect(page).to_not have_content("Review 3")
   end
 
+  it "can see a flash message indicating that user needs to fill in a title, rating, and content in order to edit a shelter review" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
+    review_2 = Review.create(title: "Review 3", rating: 4, content: "We loved it.", picture: "image", shelter_id: cozy_kitten.id)
+
+    visit "/reviews/#{review_2.id}/edit"
+
+    fill_in :title, with: ""
+    fill_in :rating, with: ""
+    fill_in :content, with: ""
+    fill_in :picture, with: ""
+
+    click_on "SUBMIT EDITS"
+
+    expect(page).to have_content("Error, you are missing information, Please fill out form completely")
+    expect(current_path).to eq("/reviews/#{review_2.id}/edit")
+  end
+
 end
