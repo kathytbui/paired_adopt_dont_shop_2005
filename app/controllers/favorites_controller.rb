@@ -12,6 +12,6 @@ class FavoritesController < ApplicationController
     if new_favorite.save
       flash[:notice] = "I've been added to your favorites list!"
       redirect_to("/pets/#{pet.id}")
-    end 
+    end
   end
 end

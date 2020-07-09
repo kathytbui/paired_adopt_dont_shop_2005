@@ -1,1 +1,4 @@
-<%= @favorites.count%>
+<% @favorites.each do |favorite| %>
+  <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
+  <%= favorite.pet.image %>
+<% end %>
