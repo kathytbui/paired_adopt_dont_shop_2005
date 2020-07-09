@@ -60,4 +60,12 @@ RSpec.describe 'as a visitor' do
     visit '/pets'
     expect(page).to have_link("#{shelter.name.upcase}")
   end
+
+  it "Has a favorite indicator in the nav" do
+    shelter = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", shelter_id: shelter.id )
+    cat2 = Pet.create(name: 'Sophie', approx_age: 6, sex: "Female", image: "", shelter_id: shelter.id )
+    visit "/pets"
+    expect(page).to have_content("Favorite Indicator")
+  end 
 end

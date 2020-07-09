@@ -5,9 +5,6 @@
 
 <header>
   <h1><%= link_to "#{@shelter.name.upcase}:", "/shelters/#{@shelter.id}" %> ADOPTABLE PETS</h1>
-  <nav>
-    <h3><%= link_to "ALL PETS", "/pets" %></h3>
-    <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
     <h3>NUMBER OF ADOPTABLE PETS: <%= "#{@shelter.pets.count}" %></h3>
 </header>
 

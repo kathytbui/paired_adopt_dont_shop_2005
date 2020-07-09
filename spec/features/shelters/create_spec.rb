@@ -27,4 +27,9 @@ RSpec.describe "Create a new shelter" do
     click_on 'CREATE A NEW SHELTER'
     expect(page).to have_link("ALL SHELTERS")
   end
+
+  it "Has a favorite indicator in the nav" do
+    visit '/shelters/new'
+    expect(page).to have_content("Favorite Indicator")
+  end
 end

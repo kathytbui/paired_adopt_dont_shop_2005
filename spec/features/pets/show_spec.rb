@@ -24,4 +24,11 @@ RSpec.describe "Pets show page" do
     visit "/pets/#{cat1.id}"
     expect(page).to have_link("ALL SHELTERS")
   end
+
+  it "Has a favorite indicator in the nav" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id )
+    visit "/pets/#{cat1.id}"
+    expect(page).to have_content("Favorite Indicator")
+  end 
 end

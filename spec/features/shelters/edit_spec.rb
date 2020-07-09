@@ -30,4 +30,10 @@ RSpec.describe "Shelter edit" do
     click_on "UPDATE SHELTER"
     expect(page).to have_link("ALL SHELTERS")
   end
+
+  it "Has a favorite indicator in the nav" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    visit "/shelters/#{cozy_kitten.id}/edit"
+    expect(page).to have_content("Favorite Indicator")
+  end 
 end

@@ -57,4 +57,10 @@ RSpec.describe "Create a new review" do
    expect(current_path).to eq("/shelters/#{cozy_kitten1.id}")
    expect(page).to have_content(title)
  end
+
+ it "Has a favorite indicator in the nav" do
+   cozy_kitten1 = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+   visit "/shelters/#{cozy_kitten1.id}/reviews/new"
+   expect(page).to have_content("Favorite Indicator")
+ end
 end
