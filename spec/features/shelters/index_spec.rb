@@ -45,4 +45,11 @@ RSpec.describe 'Shelter Index page' do
     visit "/shelters"
     expect(page).to have_content("Favorite Indicator")
   end
+
+  it "I can click a link to get to the favorites page"do
+    visit "/shelters"
+    click_on "Favorite Indicator:"
+    expect(current_path).to eq("/favorites")
+
+  end
 end
