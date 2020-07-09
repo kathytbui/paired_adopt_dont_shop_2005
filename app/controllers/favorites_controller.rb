@@ -14,4 +14,12 @@ class FavoritesController < ApplicationController
       redirect_to("/pets/#{pet.id}")
     end
   end
+
+  def destroy
+    pet_id = params[:pet_id]
+    require "pry";binding.pry
+    favorite = Favorite.find(params[:pet_id])
+    redirect_to("/pets/#{pet_id}")
+  end
+
 end

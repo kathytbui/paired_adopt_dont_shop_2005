@@ -27,5 +27,6 @@ Rails.application.routes.draw do
   get '/favorites', to: 'favorites#index'
   get '/pets/:id/favorites/new', to: 'favorites#new'
   post '/pets/:id/favorites', to: 'favorites#create'
+  delete '/favorites/:pet_id', to: 'favorites#destroy'
 
 end
