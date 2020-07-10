@@ -230,12 +230,102 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
       "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/create_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/destroy_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/index_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -272,6 +362,17 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -328,6 +429,14 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -396,6 +505,14 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -407,6 +524,13 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           1,
@@ -491,6 +615,12 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -558,6 +688,12 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -605,6 +741,11 @@
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           1,
@@ -660,6 +801,12 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -704,6 +851,20 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -784,6 +945,14 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -824,6 +993,58 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/favorite_spec.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -852,22 +1073,12 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
         "lines": [
           1,
-          null,
-          1,
           1,
           2,
           2,
-          null,
           null,
           null
         ]
@@ -880,77 +1091,15 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
-        "lines": [
-          1,
-          1,
-          11,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          19,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          13,
-          13,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/pet.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
         "lines": [
           1,
           1,
-          9,
+          10,
           null,
           null,
           1,
-          8,
+          14,
           null,
           null,
           1,
@@ -961,6 +1110,94 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          126,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/favorites_controller.rb": {
+        "lines": [
+          1,
+          1,
+          7,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+        "lines": [
+          1,
+          1,
+          13,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          20,
           null,
           null,
           1,
@@ -974,11 +1211,17 @@
           null,
           null,
           1,
-          3,
-          3,
+          2,
+          2,
           null,
           null,
           1,
+          15,
+          15,
+          null,
+          null,
+          1,
+          null,
           1,
           2,
           null,
@@ -993,7 +1236,7 @@
           null,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
@@ -1008,7 +1251,7 @@
           null,
           null,
           1,
-          3,
+          4,
           null,
           null,
           1,
@@ -1037,6 +1280,6 @@
         ]
       }
     },
-    "timestamp": 1594245883
+    "timestamp": 1594344375
   }
 }

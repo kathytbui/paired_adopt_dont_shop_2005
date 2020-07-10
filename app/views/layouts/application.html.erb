@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+      <h3><%= link_to "ALL PETS", "/pets" %></h3>
+      <h3><%= link_to "ALL SHELTERS", "/shelters" %></h3>
+      <h3> <%= link_to "Favorite Indicator:", "/favorites" %> <%= @favorites.count %> </h3>
+      </nav>
+    </header>
     <% flash.each do |type, message| %>
       <p><%= message %></p>
     <% end %>
