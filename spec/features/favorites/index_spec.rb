@@ -22,4 +22,12 @@ RSpec.describe 'Index Page' do
     within('nav'){expect(page).to have_content('0')}
     expect(page).to_not have_content('Fred')
   end
+
+  it 'I see text saying that I have no favorited pets' do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    visit '/favorites'
+    expect(page).to have_content("You have not favorited any pets!")
+  end
+
 end

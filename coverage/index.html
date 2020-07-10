@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-09T19:53:06-05:00">2020-07-09T19:53:06-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-09T20:11:47-05:00">2020-07-09T20:11:47-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>693</b> relevant lines,
-    <span class="green"><b>693</b> lines covered</span> and
+    <b>698</b> relevant lines,
+    <span class="green"><b>698</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -77,7 +77,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">25.20</td>
+            <td class="cell--number">25.40</td>
             
           </tr>
         
@@ -88,7 +88,7 @@
             <td class="cell--number">15</td>
             <td class="cell--number">15</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.47</td>
+            <td class="cell--number">1.53</td>
             
           </tr>
         
@@ -359,11 +359,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c7e29e4a05ab25014f5be7e867bb894ce0e4f67f" class="src_link" title="spec/features/favorites/index_spec.rb">spec/features/favorites/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">25</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">21</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">26</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.05</td>
+            <td class="cell--number">1.04</td>
             
           </tr>
         
@@ -675,8 +675,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="122" data-linenumber="6">
-            <span class="hits">122</span>
+          <li class="covered" data-hits="123" data-linenumber="6">
+            <span class="hits">123</span>
             
 
             
@@ -761,8 +761,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="3">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="3">
+            <span class="hits">5</span>
             
 
             
@@ -5879,8 +5879,8 @@
     
 
     <div class="t-line-summary">
-      <b>21</b> relevant lines.
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>26</b> relevant lines.
+      <span class="green"><b>26</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -6157,6 +6157,94 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;I see text saying that I have no favorited pets&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    cozy_kitten = Shelter.create(name: &quot;Cozy Kitten Animal Shelter&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    cat1 = Pet.create(name: &#39;Fred&#39;, approx_age: 2, sex: &quot;Male&quot;, image: &quot;&quot;, description: &quot;Fred is the sweetest boy&quot;, adoption_status: &quot;Adoptable&quot;, shelter_id: cozy_kitten.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit &#39;/favorites&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;You have not favorited any pets!&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 

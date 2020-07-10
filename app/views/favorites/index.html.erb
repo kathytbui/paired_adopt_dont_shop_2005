@@ -1,5 +1,9 @@
+<% if @favorites.empty? == true %>
+<h5> You have not favorited any pets! </h5>
+<% else %>
 <% @favorites.each do |favorite| %>
   <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
   <%= favorite.pet.image %>
   <%= link_to "Remove Me From Your Favorites", "/favorites/#{favorite.pet_id}", method: :delete %>
+<% end %>
 <% end %>
