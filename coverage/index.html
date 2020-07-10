@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-09T17:04:19-05:00">2020-07-09T17:04:19-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-09T19:18:16-05:00">2020-07-09T19:18:16-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  81.68%
+  86.26%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.83
+         0.9
        </span>
     </span> hits/line
     )
@@ -44,10 +44,10 @@
 
   <div class="t-line-summary">
     <b>131</b> relevant lines,
-    <span class="green"><b>107</b> lines covered</span> and
-    <span class="red"><b>24</b> lines missed. </span>
+    <span class="green"><b>113</b> lines covered</span> and
+    <span class="red"><b>18</b> lines missed. </span>
     (<span class="yellow">
-  81.68%
+  86.26%
 </span>
 )
   </div>
@@ -77,18 +77,18 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.20</td>
+            <td class="cell--number">1.40</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#2eb571416822bc7e663630d39e40463beac51dfa" class="src_link" title="app/controllers/favorites_controller.rb">app/controllers/favorites_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">46.67 %</td>
+            <td class="red strong cell--number t-file__coverage">60.00 %</td>
             <td class="cell--number">25</td>
             <td class="cell--number">15</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">0.47</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0.60</td>
             
           </tr>
         
@@ -99,7 +99,7 @@
             <td class="cell--number">23</td>
             <td class="cell--number">11</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">0.48</td>
+            <td class="cell--number">0.52</td>
             
           </tr>
         
@@ -303,12 +303,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6490f6920a38fd9864e95f7a19cdae4249497354" class="src_link" title="spec/features/favorites/destroy_spec.rb">spec/features/favorites/destroy_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">71.43 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">18</td>
             <td class="cell--number">14</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0.71</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.07</td>
             
           </tr>
         
@@ -411,8 +411,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="6">
+            <span class="hits">3</span>
             
 
             
@@ -453,7 +453,7 @@
     <h3>app/controllers/favorites_controller.rb</h3>
     <h4>
       <span class="red">
-  46.67%
+  60.0%
 </span>
 
       lines covered
@@ -463,8 +463,8 @@
 
     <div class="t-line-summary">
       <b>15</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
 
     
@@ -679,7 +679,7 @@
 
             
 
-            <code class="ruby">    pet_id = params[:pet_id]</code>
+            <code class="ruby">    pet = Pet.find(params[:pet_id])</code>
           </li>
         </div>
       
@@ -690,29 +690,29 @@
 
             
 
-            <code class="ruby">    require &quot;pry&quot;;binding.pry</code>
+            <code class="ruby">    pet.favorite.destroy_all</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="21">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    favorite = Favorite.find(params[:pet_id])</code>
+            
+
+            <code class="ruby">    redirect_to(&quot;/pets/#{pet.id}&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    redirect_to(&quot;/pets/#{pet_id}&quot;)</code>
+            
+
+            <code class="ruby">    flash[:notice] = &quot;You successfully removed this pet from your favorites&quot;</code>
           </li>
         </div>
       
@@ -847,8 +847,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
             
 
             
@@ -4053,8 +4053,8 @@
   <div class="header">
     <h3>spec/features/favorites/destroy_spec.rb</h3>
     <h4>
-      <span class="red">
-  71.43%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -4064,8 +4064,8 @@
 
     <div class="t-line-summary">
       <b>14</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -4186,8 +4186,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
             
 
             
@@ -4197,8 +4197,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="12">
-            
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
             
 
             
@@ -4208,8 +4208,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="13">
-            
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
@@ -4219,8 +4219,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="14">
-            
+          <li class="covered" data-hits="2" data-linenumber="14">
+            <span class="hits">2</span>
             
 
             

@@ -20,9 +20,9 @@
   <h5><%= link_to "EDIT #{@pet.name.upcase}'S INFO", "#{@pet.id}/edit"  %></h5>
   <h5><%= link_to "DELETE #{@pet.name.upcase}", "#{@pet.id}", method: :delete%></h5>
 </div>
-  <% if @pet.favorite.nil? %>
-  <h5><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
-  <% else %>
+<% if @pet.favorite.empty? == false %>
   <h5><%= link_to "Remove me from your favorites", "/favorites/#{@pet.id}", method: :delete %></h5>
+  <% else %>
+  <h5><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
   <% end %>
 </body>

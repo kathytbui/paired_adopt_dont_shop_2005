@@ -16,10 +16,10 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    pet_id = params[:pet_id]
-    require "pry";binding.pry
-    favorite = Favorite.find(params[:pet_id])
-    redirect_to("/pets/#{pet_id}")
+    pet = Pet.find(params[:pet_id])
+    pet.favorite.destroy_all
+    redirect_to("/pets/#{pet.id}")
+    flash[:notice] = "You successfully removed this pet from your favorites"
   end
 
 end
