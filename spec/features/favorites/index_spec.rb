@@ -11,4 +11,15 @@ RSpec.describe 'Index Page' do
     click_on 'Gordo'
     expect(current_path).to eq("/pets/#{cat2.id}")
   end
+
+  it 'should remove a favorite from favorites page' do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    favorite1 = Favorite.create(pet_id: cat1.id)
+    visit '/favorites'
+    click_on "Remove Me From Your Favorites"
+    expect(current_path).to eq("/favorites")
+    within('nav'){expect(page).to have_content('0')}
+    expect(page).to_not have_content('Fred')
+  end
 end

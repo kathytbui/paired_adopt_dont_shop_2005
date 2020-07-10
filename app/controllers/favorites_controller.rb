@@ -18,7 +18,7 @@ class FavoritesController < ApplicationController
   def destroy
     pet = Pet.find(params[:pet_id])
     pet.favorite.destroy_all
-    redirect_to("/pets/#{pet.id}")
+    redirect_back fallback_location: "/pets#{pet.id}"
     flash[:notice] = "You successfully removed this pet from your favorites"
   end
 
