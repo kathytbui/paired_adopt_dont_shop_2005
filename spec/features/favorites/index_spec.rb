@@ -30,4 +30,13 @@ RSpec.describe 'Index Page' do
     expect(page).to have_content("You have not favorited any pets!")
   end
 
+  it 'Removes all Favorites from Favorites Page' do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    visit '/favorites'
+    click_on "Remove ALL Favorites"
+    expect(current_path).to eq('/favorites')
+    expect(page).to have_content("You have not favorited any pets!")
+  end
 end
