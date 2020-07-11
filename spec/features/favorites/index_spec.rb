@@ -39,4 +39,17 @@ RSpec.describe 'Index Page' do
     expect(current_path).to eq('/favorites')
     expect(page).to have_content("You have not favorited any pets!")
   end
+
+  it "clicks a link going to a form to adopt favorited pets" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+
+    click_on "Adopt A Pet"
+
+    expect(current_path).to eq('applicant/new')
+
+    
+
+  end
 end
