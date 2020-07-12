@@ -1,6 +1,6 @@
 class Pet < ApplicationRecord
   belongs_to :shelter
-  has_many :favorite
-  has_many :applicant_pets
-  has_many :applicants, through: :applicant_pets
+  has_many :favorites
+  has_many :applications_pets
+  has_many :applications, through: :applications_pets
 end

@@ -236,6 +236,12 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -245,21 +251,37 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/applications_pets/index_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           2,
           2,
           2,
           null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/shelter.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -273,23 +295,33 @@
           null
         ]
       },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applicant_pet.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications.rb": {
         "lines": [
           1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applicant.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -303,8 +335,42 @@
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications_pet.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/applications_pets_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1594430584
+    "timestamp": 1594588757
   }
 }

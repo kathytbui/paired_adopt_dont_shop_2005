@@ -1,7 +1,7 @@
 RSpec.describe Pet, type: :model do
 	describe "relationships" do
-    it { should have_many :favorite }
-		it { should have_many :applicant_pets }
-		it { should have_many(:applicants).through(:applicant_pets) }
+    it { should have_many :favorites }
+		it {should have_many :applications_pets}
+		it {should have_many(:applications).through(:applications_pets)}
   end
 end
