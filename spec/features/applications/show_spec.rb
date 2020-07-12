@@ -28,4 +28,19 @@ RSpec.describe 'Application show page' do
 
     expect(current_path).to eq("/pets/#{@cat1.id}")
   end
+
+  it "I see a link to approve the application for a specific pet" do
+    ApplicationsPet.create(applications: @application1, pet: @cat2)
+    visit("/applications/#{@application1.id}")
+
+    click_button "Approve Application For #{@cat1.name}"
+
+    expect(current_path).to eq("/pets/#{@cat1.id}")
+
+    expect(page).to have_content("Pending")
+    expect(page).to have_content("On hold for #{@application1.name}")
+
+    visit "/pets/#{@cat2.id}"
+    expect(page).to_not have_content("Pending")
+  end
 end
