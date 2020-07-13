@@ -8,5 +8,5 @@
 
 <%= @application.pets.each do |pet| %>
 <%= link_to "#{pet.name}", "/pets/#{pet.id}" %>
-<%= button_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/approvals?pet_id=#{pet.id}"%>
+<%= button_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :post%>
 <% end %>

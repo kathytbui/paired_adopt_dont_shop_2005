@@ -9,7 +9,11 @@ RSpec.describe 'Application show page' do
 
     @application1 = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
 
+    @application2 = Applications.create(name: "Neeru", address: "123 Pleasant Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I like animals.")
+    @application3 = Applications.create(name: "Judith", address: "123 Pleasant Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I like animals.")
     ApplicationsPet.create(applications: @application1, pet: @cat1)
+    ApplicationsPet.create(applications: @application2, pet: @cat1)
+    ApplicationsPet.create(applications: @application3, pet: @cat1)
   end
 
   it "I see all the information from the application and names of all pets which should link to their show pages" do
@@ -30,7 +34,6 @@ RSpec.describe 'Application show page' do
   end
 
   it "I see a link to approve the application for a specific pet" do
-    ApplicationsPet.create(applications: @application1, pet: @cat2)
     visit("/applications/#{@application1.id}")
 
     click_button "Approve Application For #{@cat1.name}"
