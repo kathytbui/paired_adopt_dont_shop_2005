@@ -16,7 +16,15 @@
   <h3><%= link_to "#{@shelter.name.upcase}'S PET INDEX", "/shelters/#{@shelter.id}/pets" %></h3>
 
   <h5><%= link_to "UPDATE SHELTER", "#{@shelter.id}/edit"  %></h5>
-  <h5><%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %></h5>
+
+<section class="Delete Shelter">
+  <% if @shelter.has_pending_pets(@shelter.id) %>
+  <%= @shelter.name %> has pending pets for adoption!
+  <% else %>
+  <%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %>
+  <% end %>
+</section>
+
 </div>
 
 <h5><%= link_to "CREATE NEW REVIEW", "#{@shelter.id}/reviews/new"  %></h5>
