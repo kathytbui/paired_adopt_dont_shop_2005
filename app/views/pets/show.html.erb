@@ -31,6 +31,6 @@
   <% end %>
   <%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %>
   <% if @pet.applicant_name(@pet.id).nil? == false  %>
-  <p>On hold for <%= @pet.applicant_name(@pet.id) %></p>
+  <p>On hold for <%= link_to "#{@pet.applicant_name(@pet.id)}", "/applications/#{@pet.applicant_id(@pet.id)}"%></p>
   <% end %>
 </body>

@@ -26,6 +26,13 @@ class Pet < ApplicationRecord
     end
   end
 
+  def applicant_id(pet_id)
+    id = ApplicationsPet.where(pet_id: pet_id, status: "Pending")[0]
+    if id.nil? == false
+      id.applications.id
+    end
+  end
+
   def self.pets_count
     Pet.all.count
   end
