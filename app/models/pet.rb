@@ -1,7 +1,7 @@
 class Pet < ApplicationRecord
   belongs_to :shelter
-  has_many :favorites
-  has_many :applications_pets
+  has_many :favorites, dependent: :delete_all
+  has_many :applications_pets, dependent: :delete_all
   has_many :applications, through: :applications_pets
 
   def update_status(petid)
