@@ -57,4 +57,19 @@ RSpec.describe "Pets show page" do
 
     expect(current_path).to eq("/applications/#{application1.id}")
   end
+
+  it "If a pet has an approved application on them I can not delete that pet" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    application1 = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
+
+    ApplicationsPet.create(applications: application1, pet: cat1)
+
+    visit("/applications/#{application1.id}")
+
+    click_on "Approve Application For #{cat1.name}"
+    
+    visit("/pets/#{cat1.id}")
+    expect(page).to_not have_content("DELETE FRED")
+  end
 end

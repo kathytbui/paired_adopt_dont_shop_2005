@@ -18,7 +18,11 @@
     <li>ADOPTION STATUS: <p><%= @pet.adoption_status %></p></li>
   </ul>
   <h5><%= link_to "EDIT #{@pet.name.upcase}'S INFO", "#{@pet.id}/edit"  %></h5>
+  <% if @pet.adoption_status == "Pending" %>
+  <p>This pet is unable to be deleted at this time</p>
+  <% else @pet.adoption_status == "Adoptable" %>
   <h5><%= link_to "DELETE #{@pet.name.upcase}", "#{@pet.id}", method: :delete%></h5>
+  <% end %>
 </div>
 <% if @pet.favorites.empty? == false %>
   <h5><%= link_to "Remove me from your favorites", "/favorites/#{@pet.id}", method: :delete %></h5>
