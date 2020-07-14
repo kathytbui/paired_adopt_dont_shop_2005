@@ -15,6 +15,14 @@ class Shelter < ApplicationRecord
     shelter.pets.exists?(adoption_status: "Pending")
   end
 
+  def applications_count(shelter_id)
+    shelter = Shelter.find(shelter_id)
+    apps = shelter.pets.flat_map do |pet|
+      pet.applications
+    end
+    apps.count
+  end
+
   private
   def destroy_pet_favorites
     self.pets.each do |pet|

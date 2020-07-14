@@ -10,4 +10,8 @@ class Applications < ApplicationRecord
   validates_presence_of :zip
   validates_presence_of :phone_number
   validates_presence_of :description
+
+  def self.applications_count
+    Applications.all.count
+  end
 end

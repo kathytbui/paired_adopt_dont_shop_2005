@@ -43,7 +43,7 @@
 <section>
   Number of pets at this shelter: <%= @shelter.pets.pets_count %>
   Average shelter review rating: <%= @shelter.reviews.average_rating %>
-  <%# Number of applications on file for shelter: <%= @shelter. %> %>
+  Number of applications on file for shelter: <%= @shelter.applications_count(@shelter.id) %>
 </section>
 
 

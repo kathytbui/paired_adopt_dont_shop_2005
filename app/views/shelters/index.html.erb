@@ -10,13 +10,17 @@
 </header>
 
 <% @shelters.each do |shelter| %>
-  <%= link_to "#{shelter.name.upcase}", "/shelters/#{shelter.id}" %>
-  <%= link_to "EDIT SHELTER", "/shelters/#{shelter.id}/edit" %>
-  <% if shelter.has_pending_pets(shelter.id) %>
-    <%= shelter.name %> has pending pets for adoption!
-  <% else %>
-    <%= link_to "DELETE #{shelter.name}", "/shelters/#{shelter.id}", method: :delete %>
-  <% end %>
+  <section>
+    <article class="shelters-<%= shelter.id %>">
+      <%= link_to "#{shelter.name.upcase}", "/shelters/#{shelter.id}" %>
+      <%= link_to "EDIT SHELTER", "/shelters/#{shelter.id}/edit" %>
+      <% if shelter.has_pending_pets(shelter.id) %>
+      <%= shelter.name %> has pending pets for adoption!
+      <% else %>
+      <%= link_to "DELETE #{shelter.name}", "/shelters/#{shelter.id}", method: :delete %>
+      <% end %>
+    </article>
+  </section>
 <% end %>
 
 <img src="https://www.dogstrust.org.uk/our-centres/glasgow/centre-updates/news/2020/174714lrg_dtglasgowpups.jpg" alt="pets" id="main_page_image">

@@ -5,7 +5,7 @@ RSpec.describe "Shelters show page" do
     @review_1 = Review.create(title: "Review 1", rating: 4, content: "We loved it.", picture: "image", shelter_id: @cozy_kitten.id)
     @review_2 = Review.create(title: "Review 2", rating: 2, content: "We loved it.", picture: "image", shelter_id: @cozy_kitten.id)
     @application = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
-    ApplicationsPet.create(applications: @application, pet: @cat1)
+    ApplicationsPet.create(applications: @application, pet: @cat)
   end
 
   it "shows all name, address, city, state, zip for a specific shelter" do
@@ -47,6 +47,6 @@ RSpec.describe "Shelters show page" do
     visit "/shelters/#{@cozy_kitten.id}"
     expect(page).to have_content("Number of pets at this shelter: 1")
     expect(page).to have_content("Average shelter review rating: 3")
-    # expect(page).to have_content("Number of applications on file for shelter: 1")
+    expect(page).to have_content("Number of applications on file for shelter: 1")
   end
 end
