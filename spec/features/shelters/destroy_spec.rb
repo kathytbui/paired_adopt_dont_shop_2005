@@ -28,22 +28,21 @@ RSpec.describe "When I Visit a Shelter Show page" do
     expect(page).to_not have_content("DELETE #{@cozy_kitten.name}")
   end
 
-  # User story 27 - foreign key for pet on applications_pets causing issues
-  # it "should be able to delete a shelters as long as all pets do not have approved applications on them" do
-  #   application = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
-  #   ApplicationsPet.create(applications: application, pet: @cat)
-  #   visit("/applications/#{application.id}")
-  #   expect(page).to have_content(application.name)
-  #   visit "/shelters/#{@cozy_kitten.id}"
-  #   expect(page).to have_content("DELETE SHELTER")
-  #   visit "/pets"
-  #   expect(page).to_not have_content("#{@cat.name}")
-  #
-  #   visit "/shelters"
-  #   expect(page).to have_content("DELETE #{@cozy_kitten.name}")
-  #   visit "/pets"
-  #   expect(page).to_not have_content("#{@cat.name}")
-  # end
+  it "should be able to delete a shelters as long as all pets do not have approved applications on them" do
+    application = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
+    ApplicationsPet.create(applications: application, pet: @cat)
+    visit("/applications/#{application.id}")
+    expect(page).to have_content(application.name)
+    visit "/shelters/#{@cozy_kitten.id}"
+    expect(page).to have_content("DELETE SHELTER")
+    visit "/pets"
+    expect(page).to_not have_content("#{@cat.name}")
+
+    visit "/shelters"
+    expect(page).to have_content("DELETE #{@cozy_kitten.name}")
+    visit "/pets"
+    expect(page).to_not have_content("#{@cat.name}")
+  end
 
   it "should delete all reviews when deleting a shelter from shelter show page" do
     visit "/shelters/#{@cozy_kitten.id}"
