@@ -9,7 +9,7 @@ class ApplicationsController < ApplicationController
     pets = pet_ids.map {|id| Pet.find(id)}
 
     if application.save
-      pets.each {|pet| ApplicationsPet.create(applications: application, pet: pet) }
+      pets.each {|pet| ApplicationsPet.create(applications: application, pet: pet)}
       flash[:notice] = "Application Submitted!"
       redirect_to '/favorites'
     else
