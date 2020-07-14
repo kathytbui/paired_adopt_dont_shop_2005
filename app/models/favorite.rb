@@ -5,6 +5,5 @@ class Favorite < ApplicationRecord
     Favorite.all.map do |favorite|
       favorite.pet
     end
-
   end
 end

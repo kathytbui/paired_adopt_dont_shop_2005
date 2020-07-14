@@ -34,6 +34,8 @@ RSpec.describe 'Index Page' do
     cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    favorite1 = Favorite.create(pet_id: cat2.id)
+    favorite2 = Favorite.create(pet_id: cat2.id)
     visit '/favorites'
     click_on "Remove ALL Favorites"
     expect(current_path).to eq('/favorites')
@@ -72,7 +74,7 @@ RSpec.describe 'Index Page' do
   within(".viewable_favorites") do
   expect(page).to_not have_content(cat1.name)
   expect(page).to_not have_content(cat2.name)
-end
+  end
 end
 
 it "cannot submit application if information is missing" do
@@ -90,43 +92,43 @@ it "cannot submit application if information is missing" do
   click_on "Submit Application"
   expect(page).to have_content("Application was not submitted successfully")
   expect(current_path).to eq("/applications/new")
-  end
+end
 
   it "shows a list of pets with applications" do
-  cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
-  cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
-  cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
-  cat3 = Pet.create(name: 'Jinx', approx_age: 5, sex: "Female", image: "", description: "Jinx is a very friendly cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
-  name = "Kathy"
-  address = "123 Main Rd"
-  city = "Denver"
-  state = "CO"
-  zip = "80207"
-  number = "123-456-6789"
-  description = "I have a big backyard to play in."
-  favorite1 = Favorite.create(pet_id: cat1.id)
-  favorite2 = Favorite.create(pet_id: cat2.id)
-  favorite3 = Favorite.create(pet_id: cat3.id)
-  visit '/favorites'
-  click_on "Adopt A Pet"
-  expect(current_path).to eq('/applications/new')
-  check "Fred"
-  check "Gordo"
-  fill_in :name, with: name
-  fill_in :address, with: address
-  fill_in :city, with: city
-  fill_in :state, with: state
-  fill_in :zip, with: zip
-  fill_in :phone_number, with: number
-  fill_in :description, with: description
-  click_on "Submit Application"
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    cat3 = Pet.create(name: 'Jinx', approx_age: 5, sex: "Female", image: "", description: "Jinx is a very friendly cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    name = "Kathy"
+    address = "123 Main Rd"
+    city = "Denver"
+    state = "CO"
+    zip = "80207"
+    number = "123-456-6789"
+    description = "I have a big backyard to play in."
+    favorite1 = Favorite.create(pet_id: cat1.id)
+    favorite2 = Favorite.create(pet_id: cat2.id)
+    favorite3 = Favorite.create(pet_id: cat3.id)
+    visit '/favorites'
+    click_on "Adopt A Pet"
+    expect(current_path).to eq('/applications/new')
+    check "Fred"
+    check "Gordo"
+    fill_in :name, with: name
+    fill_in :address, with: address
+    fill_in :city, with: city
+    fill_in :state, with: state
+    fill_in :zip, with: zip
+    fill_in :phone_number, with: number
+    fill_in :description, with: description
+    click_on "Submit Application"
 
-  within(".application_favorites") do
-    expect(page).to_not have_link(cat3.name)
-    expect(page).to have_link(cat1.name)
-    expect(page).to have_link(cat2.name)
-    click_on "Fred"
-    expect(current_path).to eq("/pets/#{cat1.id}")
+    within(".application_favorites") do
+      expect(page).to_not have_link(cat3.name)
+      expect(page).to have_link(cat1.name)
+      expect(page).to have_link(cat2.name)
+      click_on "Fred"
+      expect(current_path).to eq("/pets/#{cat1.id}")
+    end
   end
-end
 end

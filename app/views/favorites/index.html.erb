@@ -1,6 +1,6 @@
 <section class="viewable_favorites">
 <% if @favorites.empty? == true %>
-<h5> You have not favorited any pets! </h5>
+  You have not favorited any pets!
 <% else %>
 <% @viewable_favorites.each do |favorite| %>
   <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
