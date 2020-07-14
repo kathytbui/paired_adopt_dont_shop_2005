@@ -20,7 +20,7 @@ RSpec.describe "Shelter Pets index page" do
 
   describe "When I visit a shelter pets index page I see a link to edit pet info next to every pet"
     it "When I click the link I'm taken to a page to edit pet's info" do
-      shelter = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+      shelter = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
       cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", shelter_id: shelter.id )
       visit "/shelters/#{shelter.id}/pets"
       click_link "EDIT #{cat1.name.upcase}'S INFO"
@@ -29,7 +29,7 @@ RSpec.describe "Shelter Pets index page" do
 
   describe "When I visit a shelter pets index page I see a link to delete pet next to every pet"
     it "When I click the link the pet is deleted and I no longer see the page on the pet index page" do
-      shelter = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+      shelter = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
       cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", shelter_id: shelter.id )
       visit "shelters/#{shelter.id}/pets"
       click_link "DELETE #{cat1.name.upcase}"

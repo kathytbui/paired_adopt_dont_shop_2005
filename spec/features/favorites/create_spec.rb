@@ -1,6 +1,6 @@
 RSpec.describe 'Create a Favorite' do
   it 'should show all favorites' do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is so fluffy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}"

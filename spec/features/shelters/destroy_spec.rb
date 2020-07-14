@@ -1,7 +1,7 @@
 RSpec.describe "When I Visit a Shelter Show page" do
   before :each do
-    @cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", city: "Denver", state: "CO", zip: 80207)
-    @playful_pups = Shelter.create(name: "Playful Puppies Animal Shelter")
+    @cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
+    @playful_pups = Shelter.create(name: "Playful Puppies Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     @cat = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: @cozy_kitten.id)
     @review_1 = Review.create(title: "Review 1", rating: 4, content: "We loved it.", picture: "image", shelter_id: @cozy_kitten.id)
     @review_2 = Review.create(title: "Review 2", rating: 4, content: "We loved it.", picture: "image", shelter_id: @playful_pups.id)

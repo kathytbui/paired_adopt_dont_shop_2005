@@ -33,7 +33,7 @@ RSpec.describe "Pets show page" do
   end
 
   it "has a link to applications for this pet" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     cat2 = Pet.create(name: 'Gordo', approx_age: 2, sex: "Male", image: "", description: "Gorod is the cutest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     favorite1 = Favorite.create(pet_id: cat1.id)

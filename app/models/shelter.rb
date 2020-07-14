@@ -1,6 +1,11 @@
 class Shelter < ApplicationRecord
-
   before_destroy :destroy_pet_favorites
+
+  validates_presence_of :name
+  validates_presence_of :address
+  validates_presence_of :city
+  validates_presence_of :state
+  validates_presence_of :zip
 
   has_many :pets, dependent: :delete_all
   has_many :reviews, dependent: :delete_all

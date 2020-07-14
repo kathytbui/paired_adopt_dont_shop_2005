@@ -7,7 +7,7 @@ RSpec.describe Pet, type: :model do
 
 	describe "methods" do
 		it "#update_status" do
-		cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+		cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
 		cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
 
 		expect(cat1.update_status(cat1.id)).to eq(true)
