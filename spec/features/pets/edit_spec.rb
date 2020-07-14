@@ -1,6 +1,6 @@
 RSpec.describe "Pet edit" do
   it "when I visit a Pet show page I can edit the pet's info" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}"
     click_link "EDIT #{cat1.name.upcase}"
@@ -16,7 +16,7 @@ RSpec.describe "Pet edit" do
   end
 
   it "Has a link to shelter index page" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}"
     click_link "EDIT #{cat1.name.upcase}"
@@ -25,7 +25,7 @@ RSpec.describe "Pet edit" do
   end
 
   it "Has a link to pet index page" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}"
     click_link "EDIT #{cat1.name.upcase}"
@@ -33,7 +33,7 @@ RSpec.describe "Pet edit" do
   end
 
   it "Has a favorite indicator in the nav" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}/edit"
     expect(page).to have_content("Favorite Indicator")

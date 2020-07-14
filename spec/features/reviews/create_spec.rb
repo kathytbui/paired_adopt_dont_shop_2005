@@ -1,7 +1,7 @@
 RSpec.describe "Create a new review" do
 
   it "creates a new review" do
-    cozy_kitten1 = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+    cozy_kitten1 = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
 
     visit "/shelters/#{cozy_kitten1.id}"
 
@@ -39,7 +39,7 @@ RSpec.describe "Create a new review" do
  end
 
  it "creates a new review without a picture" do
-   cozy_kitten1 = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+   cozy_kitten1 = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
 
    visit "/shelters/#{cozy_kitten1.id}"
 
@@ -59,7 +59,7 @@ RSpec.describe "Create a new review" do
  end
 
  it "Has a favorite indicator in the nav" do
-   cozy_kitten1 = Shelter.create(name: "The Cozy Kitten Animal Shelter")
+   cozy_kitten1 = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
    visit "/shelters/#{cozy_kitten1.id}/reviews/new"
    expect(page).to have_content("Favorite Indicator")
  end

@@ -1,4 +1,5 @@
 class Pet < ApplicationRecord
+
   belongs_to :shelter
   has_many :favorites, dependent: :delete_all
   has_many :applications_pets, dependent: :delete_all
@@ -23,5 +24,9 @@ class Pet < ApplicationRecord
     if name.nil? == false
       name.applications.name
     end
+  end
+
+  def self.pets_count
+    Pet.all.count
   end
 end

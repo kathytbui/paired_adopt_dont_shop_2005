@@ -2,33 +2,21 @@
   <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
 </head>
 <body id="edit">
-
-
 <header>
   <h1>CREATE A NEW SHELTER</h1>
 </header>
 
 <%= form_tag "/shelters" do %>
   <%= label_tag :name %>
-  <p>
   <%= text_field_tag :name %>
-  <p>
   <%= label_tag :address %>
-  <p>
   <%= text_field_tag :address %>
-  <p>
-  <%= label_tag :state %>
-  <p>
-  <%= text_field_tag :state %>
-  <p>
   <%= label_tag :city %>
-  <p>
   <%= text_field_tag :city %>
-  <p>
+  <%= label_tag :state %>
+  <%= text_field_tag :state %>
   <%= label_tag :zip %>
-  <p>
   <%= text_field_tag :zip %>
-  <p>
   <%= submit_tag "Create Shelter" %>
 <% end %>
 </body>
