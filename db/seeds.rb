@@ -6,14 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#shelters
 cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
 playful_pups = Shelter.create(name: "Playful Puppies Animal Shelter")
 
-#pets
 cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
 cat2 = Pet.create(name: 'Gordo', approx_age: 5, sex: "Male", image: "", description: "Gordo is a very fluffy cat!", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
 cat3 = Pet.create(name: 'Jinx', approx_age: 5, sex: "Female", image: "", description: "Jinx is a very friendly cat!", adoption_status: "Adoptable", shelter_id: playful_pups.id)
+
+review_1 = Review.create(title: "Review 1", rating: 4, content: "We loved it.", picture: "image", shelter_id: cozy_kitten.id)
+review_2 = Review.create(title: "Review 2", rating: 3, content: "It was cool.", picture: "image", shelter_id: playful_pups.id)
 
 favorite1 = Favorite.create(pet_id: cat1.id)
 favorite2 = Favorite.create(pet_id: cat2.id)
