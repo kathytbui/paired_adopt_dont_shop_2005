@@ -3,6 +3,11 @@ class Pet < ApplicationRecord
   has_many :favorites, dependent: :delete_all
   has_many :applications_pets, dependent: :delete_all
   has_many :applications, through: :applications_pets
+  validates_presence_of :image
+  validates_presence_of :name
+  validates_presence_of :approx_age
+  validates_presence_of :sex
+  validates_presence_of :description
 
   def update_status(petid)
     pet = Pet.find(petid)
