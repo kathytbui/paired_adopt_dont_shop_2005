@@ -82,4 +82,11 @@ RSpec.describe 'Application show page' do
     expect(page).to have_content("Adoptable")
     expect(page).to_not have_content("On hold for #{@application1.name}")
   end
+
+  it "All Pet Names are links to that Pet's Show Page" do
+    visit("/applications/#{@application1.id}")
+    within(".pet-#{@cat1.id}") do
+      expect(page).to have_link("#{@cat1.name}")
+    end
+  end
 end
