@@ -30,5 +30,31 @@ RSpec.describe "Pets show page" do
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id )
     visit "/pets/#{cat1.id}"
     expect(page).to have_content("Favorite Indicator")
-  end 
+  end
+
+  it "has a link to applications for this pet" do
+    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter")
+    cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    cat2 = Pet.create(name: 'Gordo', approx_age: 2, sex: "Male", image: "", description: "Gorod is the cutest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+    favorite1 = Favorite.create(pet_id: cat1.id)
+    favorite2 = Favorite.create(pet_id: cat2.id)
+    application1 = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
+    application2 = Applications.create(name: "Neeru", address: "123 Pleasant Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I like animals.")
+    application3 = Applications.create(name: "Neeru", address: "123 Pleasant Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I like animals.")
+    ApplicationsPet.create(applications: application1, pet: cat1)
+    ApplicationsPet.create(applications: application2, pet: cat1)
+    ApplicationsPet.create(applications: application2, pet: cat2)
+
+    visit("/pets/#{cat1.id}")
+
+    click_on "View All Applications"
+    expect(current_path).to eq("/pets/#{cat1.id}/applications")
+
+    expect(page).to have_link(application1.name)
+    expect(page).to have_link(application2.name)
+
+    click_on "Kathy"
+
+    expect(current_path).to eq("/applications/#{application1.id}")
+  end
 end

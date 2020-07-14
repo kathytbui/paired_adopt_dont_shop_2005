@@ -1,6 +1,7 @@
-class Applicant < ApplicationRecord
-  has_many :applicant_pets
-  has_many :pets, through: :applicant_pets
+class Applications < ApplicationRecord
+  has_many :applications_pets
+  has_many :pets
+  has_many :pets, through: :applications_pets
 
   validates_presence_of :name
   validates_presence_of :address

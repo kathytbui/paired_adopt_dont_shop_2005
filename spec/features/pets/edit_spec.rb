@@ -21,6 +21,7 @@ RSpec.describe "Pet edit" do
     visit "/pets/#{cat1.id}"
     click_link "EDIT #{cat1.name.upcase}"
     expect(page).to have_link("ALL SHELTERS")
+    expect(page).to have_link(nil, href: '/shelters')
   end
 
   it "Has a link to pet index page" do
@@ -36,6 +37,6 @@ RSpec.describe "Pet edit" do
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
     visit "/pets/#{cat1.id}/edit"
     expect(page).to have_content("Favorite Indicator")
-  end 
+  end
 
 end

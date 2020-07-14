@@ -1,14 +1,19 @@
+<section class="viewable_favorites">
 <% if @favorites.empty? == true %>
   You have not favorited any pets!
 <% else %>
-  <% @favorites.each do |favorite| %>
-    <%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %>
-    <%= favorite.pet.image %>
-    <%= link_to "Remove Me From Your Favorites", "/favorites/#{favorite.pet_id}", method: :delete %>
-  <% end %>
+<% @viewable_favorites.each do |favorite| %>
+  <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
+  <%= favorite.pet.image %>
+  <%= link_to "Remove Me From Your Favorites", "/favorites/#{favorite.pet_id}", method: :delete %>
 <% end %>
+<% end %>
+</section>
 
+<section class="application_favorites">
+  <% @application_favorites.each do |favorite| %>
+  <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
+  <% end %>
+</section>
 <%= link_to "Remove ALL Favorites", "/favorites", method: :delete %>
-
-
-<%= link_to "Adopt A Pet", "/applicant_pets/new" %>
+<%= link_to "Adopt A Pet", "/applications/new" %>

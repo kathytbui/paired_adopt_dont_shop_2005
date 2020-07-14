@@ -1,8 +1,6 @@
 <h1>Adopt a new pet!</h1>
-
 Pets available for adoption from your favorites!
-
-<%= form_tag "/applicant_pets", method: :post do %>
+<%= form_tag "/applications", method: :post do %>
 <%= collection_check_boxes(:favorite, :pet_id, @favorites.pets, :id, :name) %>
 <%= label_tag :name %>
 <%= text_field_tag :name %>
