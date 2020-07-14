@@ -19,9 +19,23 @@ RSpec.describe "When I Visit a Shelter Show page" do
     expect(current_path).to eq("/pets/#{@cat1.id}")
     expect(page).to have_content("Pending")
     visit "/shelters/#{@cozy_kitten.id}"
-    expect(page).to_not have_content("DELETE #{@cozy_kitten.name}")
+    expect(page).to_not have_content("DELETE SHELTER")
 
     visit "/shelters"
     expect(page).to_not have_content("DELETE #{@cozy_kitten.name}")
+  end
+
+  it "should be able to delete a shelters as long as all pets do not have approved applications on them" do
+    application = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
+    ApplicationsPet.create(applications: application, pet: @cat1)
+    visit("/applications/#{application.id}")
+    expect(page).to have_content(application.name)
+    visit "/shelters/#{@cozy_kitten.id}"
+    expect(page).to have_content("DELETE SHELTER")
+    visit "/pets"
+    expect(page).to_not have_content("#{@cat1.name}")
+
+    visit "/shelters"
+    expect(page).to have_content("DELETE #{@cozy_kitten.name}")
   end
 end
