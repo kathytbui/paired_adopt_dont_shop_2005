@@ -37,11 +37,14 @@
     <p><%= review.picture %></p>
     <p><%= link_to "EDIT REVIEW", "/reviews/#{review.id}/edit"  %></p>
     <p><%= link_to "DELETE REVIEW", "/reviews/#{review.id}", method: :delete  %></p>
-
     <% end %>
 </section>
 
-
+<section>
+  Number of pets at this shelter: <%= @shelter.pets.pets_count %>
+  Average shelter review rating: <%= @shelter.reviews.average_rating %>
+  <%# Number of applications on file for shelter: <%= @shelter. %> %>
+</section>
 
 
 

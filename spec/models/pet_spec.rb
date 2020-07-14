@@ -6,11 +6,17 @@ RSpec.describe Pet, type: :model do
   end
 
 	describe "methods" do
-		it "#update_status" do
-		cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
-		cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+		before :each do
+			@cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
+			@cat = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: @cozy_kitten.id)
+		end
 
-		expect(cat1.update_status(cat1.id)).to eq(true)
+		it "#update_status" do
+			expect(@cat.update_status(@cat.id)).to eq(true)
+		end
+
+		it "#pets_count" do
+			expect(@cozy_kitten.pets.pets_count).to eq(1)
 		end
 	end
 end

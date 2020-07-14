@@ -20,4 +20,8 @@ class Pet < ApplicationRecord
       name.applications.name
     end
   end
+
+  def self.pets_count
+    Pet.all.count
+  end
 end

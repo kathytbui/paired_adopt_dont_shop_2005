@@ -21,10 +21,4 @@ class Shelter < ApplicationRecord
       pet.favorites.destroy_all
     end
   end
-
-  def nullify_pet_id_on_applications_pets
-    self.pets.each do |pet|
-      pet.applications_pets.destroy_all
-    end
-  end
 end
