@@ -4,22 +4,19 @@
 </head>
 
 <body>
-
 <header>
 <h1>ANIMAL SHELTERS INDEX</h1>
 </header>
 
 <% @shelters.each do |shelter| %>
-  <section>
-    <article class="shelters-<%= shelter.id %>">
-      <%= link_to "#{shelter.name.upcase}", "/shelters/#{shelter.id}" %>
-      <%= link_to "EDIT SHELTER", "/shelters/#{shelter.id}/edit" %>
-      <% if shelter.has_pending_pets(shelter.id) %>
+  <section class="shelters-<%= shelter.id %>">
+    <%= link_to "#{shelter.name.upcase}", "/shelters/#{shelter.id}" %>
+    <%= link_to "EDIT SHELTER", "/shelters/#{shelter.id}/edit" %>
+    <% if shelter.has_pending_pets(shelter.id) %>
       <%= shelter.name %> has pending pets for adoption!
-      <% else %>
+    <% else %>
       <%= link_to "DELETE #{shelter.name}", "/shelters/#{shelter.id}", method: :delete %>
-      <% end %>
-    </article>
+    <% end %>
   </section>
 <% end %>
 

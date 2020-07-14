@@ -1,5 +1,5 @@
 class Shelter < ApplicationRecord
-  before_destroy :destroy_pet_favorites
+  before_destroy :destroy_pet_favorites, :destroy_pet_applications
 
   validates_presence_of :name
   validates_presence_of :address
@@ -27,6 +27,12 @@ class Shelter < ApplicationRecord
   def destroy_pet_favorites
     self.pets.each do |pet|
       pet.favorites.destroy_all
+    end
+  end
+
+  def destroy_pet_applications
+    self.pets.each do |pet|
+      pet.applications.destroy_all
     end
   end
 end
