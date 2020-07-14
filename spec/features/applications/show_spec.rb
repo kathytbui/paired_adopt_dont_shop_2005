@@ -14,36 +14,72 @@ RSpec.describe 'Application show page' do
     ApplicationsPet.create(applications: @application1, pet: @cat1)
     ApplicationsPet.create(applications: @application2, pet: @cat1)
     ApplicationsPet.create(applications: @application3, pet: @cat1)
+    ApplicationsPet.create(applications: @application1, pet: @cat2)
+    ApplicationsPet.create(applications: @application1, pet: @cat3)
   end
 
-  it "I see all the information from the application and names of all pets which should link to their show pages" do
+  # it "I see all the information from the application and names of all pets which should link to their show pages" do
+  #   visit("/applications/#{@application1.id}")
+  #   expect(page).to have_content(@application1.name)
+  #   expect(page).to have_content(@application1.address)
+  #   expect(page).to have_content(@application1.city)
+  #   expect(page).to have_content(@application1.state)
+  #   expect(page).to have_content(@application1.zip)
+  #   expect(page).to have_content(@application1.phone_number)
+  #   expect(page).to have_content(@application1.description)
+  #
+  #   expect(page).to have_link(@cat1.name)
+  #
+  #   click_on "Fred"
+  #
+  #   expect(current_path).to eq("/pets/#{@cat1.id}")
+  # end
+  #
+  # it "I see a link to approve the application for a specific pet" do
+  #   visit("/applications/#{@application1.id}")
+  #
+  #   click_on "Approve Application For #{@cat1.name}"
+  #
+  #   expect(current_path).to eq("/pets/#{@cat1.id}")
+  #
+  #   expect(page).to have_content("Pending")
+  #   expect(page).to have_content("On hold for #{@application1.name}")
+  #
+  #   visit "/pets/#{@cat2.id}"
+  #   expect(page).to_not have_content("Pending")
+  # end
+  #
+  # it "I'm able to approve the application for any number of pets" do
+  #   visit("/applications/#{@application1.id}")
+  #   expect(page).to have_link("Approve Application For #{@cat2.name}")
+  #   expect(page).to have_link("Approve Application For #{@cat3.name}")
+  # end
+  #
+  # it "I can not approve any other applications for that pet if one has been approved already" do
+  #   visit("/applications/#{@application1.id}")
+  #   click_on "Approve Application For #{@cat1.name}"
+  #
+  #   visit "/pets/#{@cat1.id}/applications"
+  #   expect(page).to have_content(@application2.name)
+  #   click_on "#{@application2.name}"
+  #   expect(page).to_not have_link("Approve Application For #{@cat1.name}")
+  # end
+  #
+  it "I can revoke an application for a pet" do
     visit("/applications/#{@application1.id}")
-    expect(page).to have_content(@application1.name)
-    expect(page).to have_content(@application1.address)
-    expect(page).to have_content(@application1.city)
-    expect(page).to have_content(@application1.state)
-    expect(page).to have_content(@application1.zip)
-    expect(page).to have_content(@application1.phone_number)
-    expect(page).to have_content(@application1.description)
+    click_on "Approve Application For #{@cat1.name}"
 
-    expect(page).to have_link(@cat1.name)
-
-    click_on "Fred"
-
-    expect(current_path).to eq("/pets/#{@cat1.id}")
-  end
-
-  it "I see a link to approve the application for a specific pet" do
     visit("/applications/#{@application1.id}")
+    expect(page).to_not have_link("Approve Application For #{@cat1.name}")
+    expect(page).to have_link("Unapprove Application For #{@cat1.name}")
+    click_on "Unapprove Application For #{@cat1.name}"
 
-    click_button "Approve Application For #{@cat1.name}"
+    expect(current_path).to eq("/applications/#{@application1.id}")
+    expect(page).to have_link("Approve Application For #{@cat1.name}")
 
-    expect(current_path).to eq("/pets/#{@cat1.id}")
-
-    expect(page).to have_content("Pending")
-    expect(page).to have_content("On hold for #{@application1.name}")
-
-    visit "/pets/#{@cat2.id}"
+    visit("/pets/#{@cat1.id}")
     expect(page).to_not have_content("Pending")
+    expect(page).to have_content("Adoptable")
+    expect(page).to_not have_content("On hold for #{@application1.name}")
   end
 end

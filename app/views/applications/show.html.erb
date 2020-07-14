@@ -8,5 +8,10 @@
 
 <%= @application.pets.each do |pet| %>
 <%= link_to "#{pet.name}", "/pets/#{pet.id}" %>
-<%= button_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :post%>
+<% if pet.adoption_status == "Pending" %>
+<%= link_to "Unapprove Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%>
+<p>This pet is no longer adoptable</p>
+<% else pet.adoption_status == "Adoptable" %>
+<%= link_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%>
+<% end %>
 <% end %>

@@ -26,4 +26,7 @@
   <h5><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
   <% end %>
   <%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %>
+  <% if @pet.applicant_name(@pet.id).nil? == false  %>
+  <p>On hold for <%= @pet.applicant_name(@pet.id) %></p>
+  <% end %>
 </body>
