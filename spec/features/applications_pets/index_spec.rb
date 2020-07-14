@@ -22,4 +22,9 @@ RSpec.describe "Pet applications index page" do
     expect(page).to_not have_content("No applications exist for this pet")
   end
 
+  it "All Applicant Names are links to that Applicant's application" do
+    visit "/pets/#{@cat1.id}/applications"
+    expect(page).to have_link("#{@application1.name}")
+  end
+
 end

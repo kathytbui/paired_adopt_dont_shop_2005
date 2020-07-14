@@ -89,4 +89,5 @@ RSpec.describe 'Application show page' do
       expect(page).to have_link("#{@cat1.name}")
     end
   end
+
 end
