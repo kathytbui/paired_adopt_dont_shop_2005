@@ -18,7 +18,7 @@
   <h5><%= link_to "UPDATE SHELTER", "#{@shelter.id}/edit"  %></h5>
 
 <section class="Delete Shelter">
-  <% if @shelter.has_pending_pets(@shelter.id) %>
+  <% if @shelter.has_pending_pets %>
   <%= @shelter.name %> has pending pets for adoption!
   <% else %>
   <%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %>
@@ -43,7 +43,7 @@
 <section>
   Number of pets at this shelter: <%= @shelter.pets.pets_count %>
   Average shelter review rating: <%= @shelter.reviews.average_rating %>
-  Number of applications on file for shelter: <%= @shelter.applications_count(@shelter.id) %>
+  Number of applications on file for shelter: <%= @shelter.applications_count %>
 </section>
 
 

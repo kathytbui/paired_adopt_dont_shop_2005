@@ -30,7 +30,7 @@
   <h5><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
   <% end %>
   <%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %>
-  <% if @pet.applicant_name(@pet.id).nil? == false  %>
-  <p>On hold for <%= link_to "#{@pet.applicant_name(@pet.id)}", "/applications/#{@pet.applicant_id(@pet.id)}"%></p>
+  <% if @pet.has_pending_applications %>
+  On hold for <%= link_to "#{@pet.applicant_name}", "/applications/#{@pet.applicant_id}"%>
   <% end %>
 </body>

@@ -10,14 +10,12 @@ class Shelter < ApplicationRecord
   has_many :pets, dependent: :delete_all
   has_many :reviews, dependent: :delete_all
 
-  def has_pending_pets(shelter_id)
-    shelter = Shelter.find(shelter_id)
-    shelter.pets.exists?(adoption_status: "Pending")
+  def has_pending_pets
+    self.pets.exists?(adoption_status: "Pending")
   end
 
-  def applications_count(shelter_id)
-    shelter = Shelter.find(shelter_id)
-    apps = shelter.pets.flat_map do |pet|
+  def applications_count
+    apps = self.pets.flat_map do |pet|
       pet.applications
     end
     apps.count
