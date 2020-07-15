@@ -28,9 +28,10 @@
     <%= image_tag(favorite.pet.image, :size => "260x180", method: :get) %>
   </section>
   <% end %>
-</section>
-
-<footer class="linktoinfo">
-<h5><%= link_to "Remove ALL Favorites", "/favorites", method: :delete %></h5>
-<h5><%= link_to "Adopt A Pet", "/applications/new" %></h5>
+  </section>
+  </section>
+  </section>
+<footer>
+<h5 class="linktoinfo"><%= link_to "Remove ALL Favorites", "/favorites", method: :delete %></h5>
+<h5 class="linktoinfo"><%= link_to "Adopt A Pet", "/applications/new" %></h5>
 </footer>

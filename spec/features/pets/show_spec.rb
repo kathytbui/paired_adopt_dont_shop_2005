@@ -75,11 +75,21 @@ RSpec.describe "Pets show page" do
 
   it "All Applicant Names are links to that Applicant's application" do
     cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207")
+
     cat1 = Pet.create(name: 'Fred', approx_age: 2, sex: "Male", image: "https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-650-80.jpg", description: "Fred is the sweetest boy", adoption_status: "Adoptable", shelter_id: cozy_kitten.id)
+
     application1 = Applications.create(name: "Kathy", address: "123 Main Rd", city: "Denver", state: "CO", zip: "80207", phone_number: "123-456-6789", description: "I have a big backyard to play in.")
 
-    ApplicationsPet.create(applications: application1, pet: cat1, status: "Pending")
-    visit("/pets/#{cat1.id}")
-    expect(page).to have_link("#{application1.name}")
+    ApplicationsPet.create(applications: application1, pet: cat1)
+
+    visit("/applications/#{application1.id}")
+
+    click_on "Approve Application For #{cat1.name}"
+
+    expect(current_path).to eq("/pets/#{cat1.id}")
+
+    click_on "#{application1.name}"
+
+    expect(current_path).to eq("/applications/#{application1.id}")
   end
 end

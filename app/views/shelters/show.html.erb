@@ -1,51 +1,57 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
-</head>
+<header>
+<h1><%= @shelter.name.upcase %></h1>
+</header>
 
-<body id="shelter_show">
-  <h1><%= @shelter.name.upcase %></h1>
+<section class="showpage">
+  <aside class="shelteraside">
+    <h2 class="name">Shelter Reviews</h2>
+    <h5 class="linktoinfo"><%= link_to "CREATE NEW REVIEW", "#{@shelter.id}/reviews/new"%></h5>
 
-<div id="attributes">
-  <ul>
-    <li>ADDRESS<p><%= @shelter.address %></p></li>
-    <li>CITY<p><%= @shelter.city %></p></li>
-    <li>STATE<p><%= @shelter.state %></p></li>
-    <li>ZIP<p><%= @shelter.zip %></p></li>
-  </ul>
 
-  <h3><%= link_to "#{@shelter.name.upcase}'S PET INDEX", "/shelters/#{@shelter.id}/pets" %></h3>
+    <% @shelter.reviews.each do |review| %>
+      <p class="attribute">Title:</p> <h3><%= review.title %></h3>
+      <p class="attribute">Rating: </p> <h3><%= review.rating %></h3>
+      <p class="attribute">Content:</p> <h3><%= review.content %></h3>
+      <p class="attribute">Image:</p> <h3><%= review.picture %></h3>
+      <div class="linktoinfo">
+      <h5><%= link_to "EDIT REVIEW", "/reviews/#{review.id}/edit"%></h5>
+      <h5><%= link_to "DELETE REVIEW", "/reviews/#{review.id}", method: :delete %></h5>
+      </div>
+      <% end %>
+    </aside>
 
-  <h5><%= link_to "UPDATE SHELTER", "#{@shelter.id}/edit"  %></h5>
+    <p class="name">Shelter Information:</p>
+    <p class="attribute">ADDRESS</p>
+      <h3><%= @shelter.address %></h3>
+    <p class="attribute">CITY</p>
+      <h3><%= @shelter.city %></h3>
+    <p class="attribute">STATE</p>
+      <h3><%= @shelter.state %></h3>
+    <p class="attribute">ZIP</p>
+      <h3><%= @shelter.zip %></h3>
+    <h3 class="name"><%= link_to "#{@shelter.name.upcase}'S PET INDEX", "/shelters/#{@shelter.id}/pets" %></h3>
 
-<section class="Delete Shelter">
-  <% if @shelter.has_pending_pets(@shelter.id) %>
-  <%= @shelter.name %> has pending pets for adoption!
-  <% else %>
-  <%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %>
-  <% end %>
-</section>
-
-</div>
-
-<h5><%= link_to "CREATE NEW REVIEW", "#{@shelter.id}/reviews/new"  %></h5>
-
-<section>
-  <% @shelter.reviews.each do |review| %>
-    <p><%= review.title %></p>
-    <p><%= review.rating %></p>
-    <p><%= review.content %></p>
-    <p><%= review.picture %></p>
-    <p><%= link_to "EDIT REVIEW", "/reviews/#{review.id}/edit"  %></p>
-    <p><%= link_to "DELETE REVIEW", "/reviews/#{review.id}", method: :delete  %></p>
+    <section class="delete-shelter">
+    <div class="linktoinfo"
+    <% if @shelter.has_pending_pets(@shelter.id) %>
+    <h5><%= @shelter.name %> has pending pets for adoption</h5>
+    <% else %>
+    <h5><%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %></h5>
     <% end %>
+    </div>
+    </section>
+
+    <div class="linktoinfo">
+    <h5><%= link_to "UPDATE SHELTER", "#{@shelter.id}/edit"  %></h5>
+    </div>
+
+    <h2 class="name">Shelter Statistics:</h2>
+    <p class="attribute">Number of pets at this shelter:</p>
+      <h3><%= @shelter.pets.pets_count %></h3>
+    <p class="attribute">Average shelter review rating:</p>
+    <h3><%= @shelter.reviews.average_rating %></h3>
+    <p class="attribute">Number of applications on file for shelter:
+      <h3><%= @shelter.applications_count(@shelter.id) %></h3>
+
+
 </section>
-
-<section>
-  Number of pets at this shelter: <%= @shelter.pets.pets_count %>
-  Average shelter review rating: <%= @shelter.reviews.average_rating %>
-  Number of applications on file for shelter: <%= @shelter.applications_count(@shelter.id) %>
-</section>
-
-
-
-</body>

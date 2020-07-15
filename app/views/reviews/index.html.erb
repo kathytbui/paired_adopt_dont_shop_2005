@@ -1,6 +1,17 @@
+<header>
+  <h1>All Reviews</h1>
+</header>
+<section class="showpage">
 <% @reviews.each do |review| %>
-<p><%= review.title %> </p>
-<p><%= review.rating %></p>
-<p><%= review.content %></p>
-<p><%= review.picture %></p>
+<div class="review">
+<p class="attribute">Name:</p>
+<h3><%= review.title %></h3>
+<p class="attribute">Rating:</p>
+<h3><%= review.rating %></h3>
+<p class="attribute">Content:</p>
+  <h3><%= review.content %></h3>
+<p class="attribute">Image:</p>
+  <h3><%= review.picture %></h3>
+</div>
 <% end %>
+</section>

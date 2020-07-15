@@ -33,6 +33,10 @@
    color:white;
  }
 
+ header a:hover {
+   color:blue;
+ }
+
  header h1 {
    font-size: 30px;
    font-weight: bold;
@@ -55,15 +59,16 @@
    color:white
  }
 
+ header nav a:hover {
+   color:blue;
+ }
+
  header nav a:active {
    color:white
  }
 
  footer {
    font-size: 25px;
-   padding-left: 10px;
-   padding-right: 15px;
-   display:inline-flex;
  }
 
  footer h5 {
@@ -74,6 +79,10 @@
    color: white;
    text-shadow: 2px 2px 2px black;
    text-decoration: none;
+ }
+
+ footer a:hover {
+   color:blue;
  }
 
  #main_page_image {
@@ -106,6 +115,13 @@
  .name {
    font-size: 27px;
    font-weight: bolder;
+   padding-right: 30px;
+ }
+
+ .deletelink {
+   padding-right: 15px;
+   color: black;
+   text-shadow: 1px 1px 1px white;
  }
 
  .indexpage a {
@@ -115,6 +131,10 @@
    text-decoration: none;
  }
 
+ .indexpage a:hover {
+   color:blue;
+ }
+
  .pet_index_list {
    color: black;
  }
@@ -122,12 +142,11 @@
  .pet_index_list h2 {
    font-size: 30px;
  }
-
+ 
  .viewable_favorites h2 {
    font-weight: bold;
    text-transform: uppercase;
    text-shadow: 2px 2px 2px black;
-   display: flex;
    padding-bottom: 15px;
  }
 
@@ -136,6 +155,8 @@
    text-transform: uppercase;
    text-shadow: 2px 2px 2px black;
    display: flex;
+   flex-direction: row;
+   flex-flow: row;
    padding-bottom: 15px;
  }
 
@@ -149,7 +170,6 @@
    font-weight: bold;
    padding-left: 10px;
    font-size: 20px;
-
  }
 
  .checkbox input {
@@ -186,6 +206,10 @@
   text-shadow: 2px 2px 2px black;
 }
 
+.showpage a:hover {
+  color:blue;
+}
+
 .showpage {
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -198,16 +222,59 @@
 .showpage .attribute {
   text-shadow: 2px 2px 2px olive;
   font-size: 25px;
+}
 
+.delete-shelter {
+  text-shadow: 2px 2px 2px red;
 }
 
 
+.reviews h2 {
+  font-size: 25px;
+  text-shadow: 2px 2px 2px olive;
+}
 
+.shelteraside {
+float: right;
+display: inline;
+width: 50%;
+border: left;
+border-color: white;
+border-style: solid;
+border-width: thin;
+padding-left: 30px;
+border-right: none;
+border-top: none;
+border-bottom: none;
+}
 
+.adoptionstatus {
+  text-shadow: 2px 2px 2px red;
+  font-size: 25px;
+}
 
+.onhold {
+  text-shadow: 2px 2px 2px red;
+  font-size: 25px;
+}
 
+.onhold a {
+  text-shadow: 2px 2px 2px olive;
+  font-size: 25px;
+}
 
+.onhold a:hover {
+  color:blue;
+}
 
+.review {
+  padding-bottom: 10px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
  .editform {
    padding: 10px;

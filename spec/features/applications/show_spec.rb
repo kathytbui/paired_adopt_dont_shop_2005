@@ -28,9 +28,7 @@ RSpec.describe 'Application show page' do
     expect(page).to have_content(@application1.phone_number)
     expect(page).to have_content(@application1.description)
 
-    expect(page).to have_link(@cat1.name)
-
-    click_on "Fred"
+    click_on "APPLICATION FOR: #{@cat1.name}"
 
     expect(current_path).to eq("/pets/#{@cat1.id}")
   end
@@ -43,7 +41,7 @@ RSpec.describe 'Application show page' do
     expect(current_path).to eq("/pets/#{@cat1.id}")
 
     expect(page).to have_content("Pending")
-    expect(page).to have_content("On hold for #{@application1.name}")
+    expect(page).to have_content("This Pet Is On hold for: #{@application1.name}")
 
     visit "/pets/#{@cat2.id}"
     expect(page).to_not have_content("Pending")
