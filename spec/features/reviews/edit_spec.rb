@@ -1,14 +1,17 @@
 RSpec.describe "Edit a review" do
   describe "when I visit a shelter's show page I see a link to edit the shelter review next to the review"
-  it "I click on the link and I am taken to a edit shelter review path" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
-    review_2 = Review.create(title: "Review 3", rating: 4, content: "We loved it.", picture: "image", shelter_id: cozy_kitten.id)
 
-    visit "/shelters/#{cozy_kitten.id}"
+  before :each do
+    @cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
+    @review_2 = Review.create(title: "Review 3", rating: 4, content: "We loved it.", picture: "image", shelter_id: @cozy_kitten.id)
+  end
+
+  it "I click on the link and I am taken to a edit shelter review path" do
+    visit "/shelters/#{@cozy_kitten.id}"
 
     click_on "EDIT REVIEW"
 
-    expect(current_path).to eq("/reviews/#{review_2.id}/edit")
+    expect(current_path).to eq("/reviews/#{@review_2.id}/edit")
 
     title = "Review 5"
 
@@ -19,16 +22,13 @@ RSpec.describe "Edit a review" do
 
     click_on "SUBMIT EDITS"
 
-    expect(current_path).to eq("/shelters/#{review_2.shelter_id}")
+    expect(current_path).to eq("/shelters/#{@review_2.shelter_id}")
     expect(page).to have_content(title)
     expect(page).to_not have_content("Review 3")
   end
 
   it "can see a flash message indicating that user needs to fill in a title, rating, and content in order to edit a shelter review" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
-    review_2 = Review.create(title: "Review 3", rating: 4, content: "We loved it.", picture: "image", shelter_id: cozy_kitten.id)
-
-    visit "/reviews/#{review_2.id}/edit"
+    visit "/reviews/#{@review_2.id}/edit"
 
     fill_in :title, with: ""
     fill_in :rating, with: ""
@@ -38,13 +38,11 @@ RSpec.describe "Edit a review" do
     click_on "SUBMIT EDITS"
 
     expect(page).to have_content("Error, you are missing information, Please fill out form completely")
-    expect(current_path).to eq("/reviews/#{review_2.id}/edit")
+    expect(current_path).to eq("/reviews/#{@review_2.id}/edit")
   end
 
   it "Has a favorite indicator in the nav" do
-    cozy_kitten = Shelter.create(name: "Cozy Kitten Animal Shelter", address: "123 Maple Street", city: "Brooklyn", state: "NY", zip:12345)
-    review_2 = Review.create(title: "Review 3", rating: 4, content: "We loved it.", picture: "image", shelter_id: cozy_kitten.id)
-    visit "/reviews/#{review_2.id}/edit"
+    visit "/reviews/#{@review_2.id}/edit"
     expect(page).to have_content("Favorite Indicator")
   end
 end
