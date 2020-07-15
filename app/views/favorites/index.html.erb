@@ -8,6 +8,7 @@
   <% if @favorites.empty? == true %>
     <h2>You have not favorited any pets!</h2>
   <% else %>
+  <h2 class="name">Favorites Without Applications</h2>
     <% @viewable_favorites.each do |favorite| %>
 
     <section class="favorite-<%= favorite.id %>">
@@ -22,10 +23,13 @@
 <% end %>
 
 <section class="application_favorites">
+  <% if @application_favorites.empty? == false %>
+  <h2 class="name">Favorites With Applications</h2>
   <% @application_favorites.each do |favorite| %>
   <section class="app_favorite-<%= favorite.id %>">
     <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
     <%= image_tag(favorite.pet.image, :size => "260x180", method: :get) %>
+  <% end %>
   </section>
   <% end %>
   </section>
