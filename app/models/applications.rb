@@ -1,6 +1,5 @@
 class Applications < ApplicationRecord
   has_many :applications_pets
-  # has_many :pets
   has_many :pets, through: :applications_pets
 
   validates_presence_of :name
