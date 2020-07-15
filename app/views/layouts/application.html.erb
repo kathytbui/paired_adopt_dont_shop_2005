@@ -3,7 +3,6 @@
   <head>
     <title>AdoptDontShop</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
@@ -18,7 +17,7 @@
       </nav>
     </header>
     <% flash.each do |type, message| %>
-      <p><%= message %></p>
+      <p class="flashmessage"><%= message %></p>
     <% end %>
 
     <%= yield %>

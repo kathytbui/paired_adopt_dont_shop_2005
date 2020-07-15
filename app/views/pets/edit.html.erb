@@ -1,12 +1,8 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
-</head>
-<body id="edit">
 <header>
   <h1>EDIT PET INFORMATION</h1>
 </header>
 
-
+<section class="editform">
 <%= form_tag "/pets/#{@pet.id}", method: :patch do %>
   <%= label_tag :image %>
   <p>
@@ -30,4 +26,4 @@
   <p>
   <%= submit_tag "Update Pet Information" %>
 <% end %>
-</body>
+</section>

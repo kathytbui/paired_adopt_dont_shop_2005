@@ -1,13 +1,8 @@
-
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
-</head>
-<body id="edit">
-
 <header>
 <h1>ADD A PET</h1>
 </header>
 
+<section class="editform">
 <%= form_tag "/shelters/#{@shelter_id}/pets", method: :post do %>
   <p>
   <%= label_tag :image %>
@@ -34,3 +29,4 @@
   <p>
   <%= submit_tag "Create Pet" %>
 <% end %>
+</section>

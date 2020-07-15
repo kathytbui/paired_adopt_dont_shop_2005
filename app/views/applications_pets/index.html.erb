@@ -1,3 +1,11 @@
-<%= @applications.each do |application| %>
+<header>
+  <h1>List of Current Applicants</h1>
+  <p>Click applicant name to view outstanding applications</p>
+</header>
+<% @applications.each do |application| %>
+<section class="indexpage">
+<div class="linktoinfo">
 <%= link_to "#{application.name}", "/applications/#{application.id}" %>
+</div>
+</section>
 <% end %>

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/environment.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/application.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/application.rb": {
         "lines": [
           1,
           null,
@@ -45,14 +45,14 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/boot.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/boot.rb": {
         "lines": [
           1,
           null,
           1
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/environments/test.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -98,7 +98,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/application_controller_renderer.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -110,7 +110,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/assets.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -128,7 +128,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/backtrace_silencers.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/cookies_serializer.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -148,7 +148,7 @@
           1
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/filter_parameter_logging.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -156,7 +156,7 @@
           1
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/inflections.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -176,7 +176,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/mime_types.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -184,7 +184,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/initializers/wrap_parameters.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -202,7 +202,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/config/routes.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -245,13 +245,13 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/helpers/application_helper.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/applications/show_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/applications/show_spec.rb": {
         "lines": [
           1,
           1,
@@ -287,7 +287,7 @@
           null,
           1,
           null,
-          1,
+          0,
           null,
           null,
           1,
@@ -348,7 +348,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/applications_pets/index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/applications_pets/index_spec.rb": {
         "lines": [
           1,
           null,
@@ -375,39 +375,6 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/create_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           1,
           1,
           null,
@@ -415,7 +382,40 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/destroy_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/create_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/destroy_spec.rb": {
         "lines": [
           1,
           1,
@@ -437,7 +437,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/favorites/index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -576,7 +576,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/pets/create_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/create_spec.rb": {
         "lines": [
           1,
           1,
@@ -646,7 +646,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/pets/destroy_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/destroy_spec.rb": {
         "lines": [
           1,
           1,
@@ -660,53 +660,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/pets/edit_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/pets/index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/edit_spec.rb": {
         "lines": [
           1,
           1,
@@ -723,6 +677,52 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/index_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -782,7 +782,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
         "lines": [
           1,
           1,
@@ -871,7 +871,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/reviews/create_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/create_spec.rb": {
         "lines": [
           1,
           null,
@@ -941,7 +941,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/reviews/delete_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/delete_spec.rb": {
         "lines": [
           1,
           1,
@@ -960,7 +960,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/reviews/edit_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/edit_spec.rb": {
         "lines": [
           1,
           1,
@@ -1014,7 +1014,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/reviews/index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -1031,7 +1031,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/create_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/create_spec.rb": {
         "lines": [
           1,
           1,
@@ -1082,79 +1082,79 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/destroy_spec.rb": {
-        "lines": [
-          1,
-          1,
-          5,
-          5,
-          5,
-          5,
-          5,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/edit_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/destroy_spec.rb": {
         "lines": [
           1,
           1,
           5,
+          5,
+          5,
+          5,
+          5,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/edit_spec.rb": {
+        "lines": [
+          1,
+          1,
+          5,
           null,
           null,
           1,
@@ -1209,7 +1209,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -1263,7 +1263,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/pets_index_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/pets_index_spec.rb": {
         "lines": [
           1,
           1,
@@ -1335,7 +1335,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/features/shelters/show_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/show_spec.rb": {
         "lines": [
           1,
           1,
@@ -1391,7 +1391,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/applications_pets_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/applications_pets_spec.rb": {
         "lines": [
           1,
           1,
@@ -1401,7 +1401,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/applications_pet.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications_pet.rb": {
         "lines": [
           1,
           1,
@@ -1420,14 +1420,14 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/applications_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/applications_spec.rb": {
         "lines": [
           1,
           1,
@@ -1464,7 +1464,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/applications.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications.rb": {
         "lines": [
           1,
           1,
@@ -1485,7 +1485,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/favorite_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/favorite_spec.rb": {
         "lines": [
           1,
           1,
@@ -1494,7 +1494,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
         "lines": [
           1,
           1,
@@ -1507,7 +1507,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
         "lines": [
           1,
           1,
@@ -1551,7 +1551,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/pet.rb": {
         "lines": [
           1,
           null,
@@ -1577,14 +1577,14 @@
           1,
           34,
           34,
-          15,
+          16,
           null,
           null,
           null,
           1,
-          8,
-          8,
-          8,
+          7,
+          7,
+          7,
           null,
           null,
           null,
@@ -1594,7 +1594,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/review_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/review_spec.rb": {
         "lines": [
           1,
           1,
@@ -1621,7 +1621,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/review.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/review.rb": {
         "lines": [
           1,
           1,
@@ -1635,7 +1635,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
         "lines": [
           1,
           1,
@@ -1676,7 +1676,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/models/shelter.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/shelter.rb": {
         "lines": [
           1,
           1,
@@ -1718,7 +1718,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/applications_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/applications_controller.rb": {
         "lines": [
           1,
           1,
@@ -1752,19 +1752,49 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
-          202,
+          201,
           null,
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/applications_pets_controller.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          5,
+          null,
+          5,
+          1,
+          null,
+          null,
+          null,
+          1,
+          6,
+          6,
+          6,
+          1,
+          1,
+          1,
+          1,
+          null,
+          5,
+          5,
+          5,
+          5,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
         "lines": [
           1,
           1,
@@ -1772,7 +1802,7 @@
           null,
           null,
           1,
-          26,
+          25,
           null,
           null,
           1,
@@ -1812,37 +1842,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/applications_pets_controller.rb": {
-        "lines": [
-          1,
-          1,
-          5,
-          5,
-          null,
-          5,
-          1,
-          null,
-          null,
-          null,
-          1,
-          6,
-          6,
-          6,
-          1,
-          1,
-          1,
-          1,
-          null,
-          5,
-          5,
-          5,
-          5,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/favorites_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/favorites_controller.rb": {
         "lines": [
           1,
           1,
@@ -1877,7 +1877,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
         "lines": [
           1,
           1,
@@ -1935,7 +1935,7 @@
           null
         ]
       },
-      "/Users/judithpillado/mod2/projects/paired_adopt_dont_shop_2005/app/controllers/reviews_controller.rb": {
+      "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/reviews_controller.rb": {
         "lines": [
           1,
           1,
@@ -1987,6 +1987,6 @@
         ]
       }
     },
-    "timestamp": 1594762305
+    "timestamp": 1594782424
   }
 }

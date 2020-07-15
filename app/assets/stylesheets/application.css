@@ -13,3 +13,240 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   font-family: "Arial", sans-serif;
+   background-color: darkgray;
+   text-transform: uppercase;
+ }
+
+ header {
+   background-color: olive;
+   color: white;
+   border-top: 5px;
+   border-color: white;
+   border-style: solid;
+   border-bottom-width: thick;
+ }
+
+ header a {
+   color:white;
+ }
+
+ header h1 {
+   font-size: 30px;
+   font-weight: bold;
+   margin-left: 10px;
+   padding-top:10px;
+   text-shadow: 1px 1px 1px black;
+ }
+
+ header nav {
+   margin-left:10px;
+   padding-bottom: 20px;
+ }
+
+ header nav h3 {
+   display:inline;
+   padding-left: 10px
+ }
+
+ header nav a{
+   color:white
+ }
+
+ header nav a:active {
+   color:white
+ }
+
+ footer {
+   font-size: 25px;
+   padding-left: 10px;
+   padding-right: 15px;
+   display:inline-flex;
+ }
+
+ footer h5 {
+   padding-right: 20px;
+ }
+
+ footer a {
+   color: white;
+   text-shadow: 2px 2px 2px black;
+   text-decoration: none;
+ }
+
+ #main_page_image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+ }
+
+ .linktoinfo {
+   font-size: 24px;
+   display: flex;
+   flex-direction: row;
+   align-self: flex-start;
+ }
+
+ .linktoinfo h5 {
+   padding-right: 15px;
+ }
+
+ .indexpage {
+   color: white;
+   display: flex;
+   flex-direction: row;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+ }
+
+ .name {
+   font-size: 27px;
+   font-weight: bolder;
+ }
+
+ .indexpage a {
+   color: white;
+   font-weight: bold;
+   text-shadow: 2px 2px 2px black;
+   text-decoration: none;
+ }
+
+ .pet_index_list {
+   color: black;
+ }
+
+ .pet_index_list h2 {
+   font-size: 30px;
+ }
+
+ .viewable_favorites h2 {
+   font-weight: bold;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 2px black;
+   display: flex;
+   padding-bottom: 15px;
+ }
+
+ .application_favorites h2 {
+   font-weight: bold;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 2px black;
+   display: flex;
+   padding-bottom: 15px;
+ }
+
+ .application-form-header {
+   color: white;
+   font-size: 20px;
+   text-transform: uppercase;
+ }
+
+ .checkbox {
+   font-weight: bold;
+   padding-left: 10px;
+   font-size: 20px;
+
+ }
+
+ .checkbox input {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-right: 18px;
+  margin-left: 18px;
+ }
+
+ .petindex {
+   padding-left: 15px;
+   padding-right: 15px;
+   font-weight: bold;
+ }
+
+ .attribute {
+   font-size: 22px;
+   text-shadow: 1px 1px 1px black;
+ }
+
+.flashmessage {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px red;
+  text-align: left;
+}
+
+.showpage a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+}
+
+.showpage {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.applicantinfo {
+  padding-bottom: 40px;
+}
+
+.showpage .attribute {
+  text-shadow: 2px 2px 2px olive;
+  font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+ .editform {
+   padding: 10px;
+   width: 500px;
+   text-transform: uppercase;
+   font-weight: bold;
+ }
+
+ .editform input {
+   padding: 20px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid black;
+   border-radius: 4px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .editform textarea{
+   width: 100%;
+   height: 150px;
+   padding: 12px 20px 12px 20px;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   background-color: #f8f8f8;
+   resize: none;
+ }
+
+ .editform input :focus {
+   background-color: lightblue;
+   border: 3px solid #555;
+ }
+
+ .editform input[type=submit] {
+   padding: 20px;
+   background-color: gray;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+ }
