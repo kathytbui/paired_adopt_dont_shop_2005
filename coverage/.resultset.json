@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/environment.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/environment.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           1,
@@ -10,7 +14,11 @@
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/application.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/application.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
@@ -45,14 +53,22 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/boot.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/boot.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/environments/test.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/environments/test.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
@@ -98,7 +114,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/application_controller_renderer.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/application_controller_renderer.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -110,7 +130,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/assets.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/assets.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -128,7 +152,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/backtrace_silencers.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/backtrace_silencers.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -139,7 +167,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/cookies_serializer.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/cookies_serializer.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -148,7 +180,11 @@
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/filter_parameter_logging.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/filter_parameter_logging.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -156,7 +192,11 @@
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/inflections.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/inflections.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -176,7 +216,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/mime_types.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/mime_types.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -184,7 +228,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/initializers/wrap_parameters.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/initializers/wrap_parameters.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           null,
           null,
@@ -202,7 +250,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/config/routes.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/config/routes.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -245,13 +297,21 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/helpers/application_helper.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/helpers/application_helper.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/applications/show_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/applications/show_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -346,7 +406,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/applications_pets/index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/applications_pets/index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
@@ -380,7 +444,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/create_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/favorites/create_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -413,7 +481,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/destroy_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/favorites/destroy_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -435,7 +507,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/favorites/index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/favorites/index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -574,7 +650,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/create_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/pets/create_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -644,7 +724,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/destroy_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/pets/destroy_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -658,7 +742,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/edit_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/pets/edit_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -704,7 +792,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/pets/index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -780,7 +872,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -879,7 +975,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/create_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/reviews/create_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
@@ -949,7 +1049,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/delete_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/reviews/delete_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -968,7 +1072,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/edit_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/reviews/edit_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1022,7 +1130,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/reviews/index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/reviews/index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1039,7 +1151,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/create_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/create_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1090,7 +1206,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/destroy_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/destroy_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1158,7 +1278,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/edit_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/edit_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1217,7 +1341,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1271,7 +1399,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/pets_index_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/pets_index_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1343,7 +1475,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/features/shelters/show_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/features/shelters/show_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1399,17 +1535,38 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/applications_pets_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/applications_pets_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
           2,
           2,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications_pet.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/applications_pet.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1423,19 +1580,31 @@
           1,
           null,
           1,
+<<<<<<< HEAD
           99,
+=======
+          102,
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
           null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/application_record.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/applications_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/applications_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1472,11 +1641,14 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/applications.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/applications.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
-          null,
           1,
           null,
           1,
@@ -1493,29 +1665,58 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/favorite_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/favorite_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
           2,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/favorite.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
           null,
           1,
-          4,
-          9,
+          5,
+          12,
           null,
           null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/pet_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1559,7 +1760,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/pet.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           null,
@@ -1602,7 +1807,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/review_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/review_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1629,7 +1838,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/review.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/review.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1643,7 +1856,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1661,18 +1878,22 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
           1,
           1,
           null,
@@ -1684,7 +1905,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/models/shelter.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/models/shelter.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1699,8 +1924,8 @@
           1,
           null,
           1,
-          50,
-          50,
+          51,
+          51,
           null,
           null,
           1,
@@ -1726,7 +1951,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/applications_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/applications_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1760,7 +1989,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1772,7 +2005,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1820,7 +2057,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/applications_pets_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/applications_pets_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1850,7 +2091,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/favorites_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/favorites_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1885,7 +2130,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1943,7 +2192,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/nirupamaram/turing/2module/paired_adopt_dont_shop_2005/app/controllers/reviews_controller.rb": {
+=======
+      "/Users/kathybui/turing/2-mod/projects/paired_adopt_dont_shop_2005/app/controllers/reviews_controller.rb": {
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
         "lines": [
           1,
           1,
@@ -1995,6 +2248,10 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1594841085
+=======
+    "timestamp": 1594772091
+>>>>>>> f17d4a72dd7f857a8b0f25edd86d770084e1e267
   }
 }
