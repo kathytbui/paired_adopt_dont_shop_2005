@@ -7,7 +7,7 @@
     <div class="petindex">
     <section class="pet-<%= pet.id %>">
       <p class="name"><%= link_to "APPLICATION FOR: #{pet.name}", "/pets/#{pet.id}" %></p>
-      <% if pet.adoption_status == "Pending" && @application.name == pet.applicant_name(pet.id) %>
+      <% if pet.adoption_status == "Pending" && @application.name == pet.applicant_name %>
       <p><%= link_to "Unapprove Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%></p>
       <% elsif pet.adoption_status == "Pending" %>
       <p>This pet is no longer adoptable</p>
