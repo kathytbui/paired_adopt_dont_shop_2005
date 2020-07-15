@@ -1,11 +1,8 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
-</head>
-<body id="edit">
 <header>
   <h1>CREATE A NEW SHELTER</h1>
 </header>
 
+<section class="editform">
 <%= form_tag "/shelters" do %>
   <%= label_tag :name %>
   <%= text_field_tag :name %>
@@ -19,4 +16,4 @@
   <%= text_field_tag :zip %>
   <%= submit_tag "Create Shelter" %>
 <% end %>
-</body>
+</section>

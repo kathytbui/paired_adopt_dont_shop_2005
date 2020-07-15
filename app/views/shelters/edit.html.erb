@@ -1,11 +1,8 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/main.css" title="text/css" />
-</head>
-<body id="edit">
 <header>
   <h1>EDIT SHELTER INFORMATION</h1>
 </header>
 
+<section class="editform">
 <%= form_tag "/shelters/#{@shelter.id}", method: :patch do %>
   <%= label_tag :name %>
   <%= text_field_tag :name, @shelter.name %>
@@ -19,4 +16,4 @@
   <%= text_field_tag :zip, @shelter.zip %>
   <%= submit_tag "Update Shelter Information" %>
 <% end %>
-</body>
+</section>

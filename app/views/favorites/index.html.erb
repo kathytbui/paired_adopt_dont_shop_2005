@@ -1,23 +1,37 @@
+<header>
+  <h1>Favorites</h1>
+</header>
+
+<section class="indexpage">
+
 <section class="viewable_favorites">
-<% if @favorites.empty? == true %>
-  You have not favorited any pets!
-<% else %>
-<% @viewable_favorites.each do |favorite| %>
-  <section class="favorite-<%= favorite.id %>">
+  <% if @favorites.empty? == true %>
+    <h2>You have not favorited any pets!</h2>
+  <% else %>
+    <% @viewable_favorites.each do |favorite| %>
+
+    <section class="favorite-<%= favorite.id %>">
     <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
-    <%= favorite.pet.image %>
-    <%= link_to "Remove Me From Your Favorites", "/favorites/#{favorite.pet_id}", method: :delete %>
+    <%= image_tag(favorite.pet.image, :size => "260x180", method: :get) %>
+    <section class="linktoinfo">
+    <h5><%= link_to "Remove Me From Your Favorites", "/favorites/#{favorite.pet_id}", method: :delete %></h5>
+    </section>
     <% end %>
   </section>
+
 <% end %>
-</section>
 
 <section class="application_favorites">
   <% @application_favorites.each do |favorite| %>
   <section class="app_favorite-<%= favorite.id %>">
     <h2><%= link_to "#{favorite.pet.name}", "/pets/#{favorite.pet_id}" %></h2>
+    <%= image_tag(favorite.pet.image, :size => "260x180", method: :get) %>
   </section>
   <% end %>
-</section>
-<%= link_to "Remove ALL Favorites", "/favorites", method: :delete %>
-<%= link_to "Adopt A Pet", "/applications/new" %>
+  </section>
+  </section>
+  </section>
+<footer>
+<h5 class="linktoinfo"><%= link_to "Remove ALL Favorites", "/favorites", method: :delete %></h5>
+<h5 class="linktoinfo"><%= link_to "Adopt A Pet", "/applications/new" %></h5>
+</footer>

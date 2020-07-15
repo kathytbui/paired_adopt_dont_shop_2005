@@ -1,23 +1,24 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
-</head>
-
-<body class="pets_index">
 <header>
   <h1><%= link_to "#{@shelter.name.upcase}:", "/shelters/#{@shelter.id}" %> ADOPTABLE PETS</h1>
     <h3>NUMBER OF ADOPTABLE PETS: <%= "#{@shelter.pets.count}" %></h3>
 </header>
+<section class="indexpage">
 
 <% @pets.each do |pet| %>
   <section class="pets_index-<%= pet.id %>">
+    <div class="petindex">
       <%= image_tag(pet.image, :size => "260x180", method: :get) %>
-      <%= link_to "#{pet.name.upcase}", "/pets/#{pet.id}" %>
-      APPROXIMATE AGE: <%= pet.approx_age %>
-      SEX: <%= pet.sex %>
-      <%= link_to "EDIT #{pet.name.upcase}'S INFO", "/pets/#{pet.id}/edit" %>
-      <%= link_to "DELETE #{pet.name.upcase}", "/pets/#{pet.id}", method: :delete %>
+      <p class="name"><%= link_to "#{pet.name.upcase}", "/pets/#{pet.id}" %></p>
+      <p class="attribute">APPROXIMATE AGE: <%= pet.approx_age %></p>
+      <p class="attribute">SEX: <%= pet.sex %></p>
+      <p>
+      <%= link_to "EDIT #{pet.name.upcase}'S INFO", "/pets/#{pet.id}/edit" %></p>
+      <p><%= link_to "DELETE #{pet.name.upcase}", "/pets/#{pet.id}", method: :delete %></p>
+      </div>
   </section>
 <% end %>
+</section>
 
-<h3 id="shelter_pet_index_create_link"><%= link_to "ADD A NEW PET TO #{@shelter.name.upcase}", "/shelters/#{@shelter.id}/pets/new" %></h3>
-</body>
+<footer>
+<h5><%= link_to "ADD A NEW PET TO #{@shelter.name.upcase}", "/shelters/#{@shelter.id}/pets/new" %></h5>
+</footer>

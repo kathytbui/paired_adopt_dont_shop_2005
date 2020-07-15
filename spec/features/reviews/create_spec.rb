@@ -6,7 +6,7 @@ RSpec.describe "Create a new review" do
   it "creates a new review" do
     visit "/shelters/#{@cozy_kitten.id}"
 
-    click_link "NEW REVIEW"
+      click_link "CREATE NEW REVIEW"
 
     expect(current_path).to eq("/shelters/#{@cozy_kitten.id}/reviews/new")
     title = "Review 1"
@@ -41,7 +41,7 @@ RSpec.describe "Create a new review" do
  it "creates a new review without a picture" do
    visit "/shelters/#{@cozy_kitten.id}"
 
-   click_link "NEW REVIEW"
+   click_link "CREATE NEW REVIEW"
 
    expect(current_path).to eq("/shelters/#{@cozy_kitten.id}/reviews/new")
    title = "Review 1"

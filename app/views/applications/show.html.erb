@@ -1,19 +1,38 @@
-<%= @application.name %>
-<%= @application.address %>
-<%= @application.city %>
-<%= @application.state %>
-<%= @application.zip %>
-<%= @application.phone_number %>
-<%= @application.description %>
+<header>
+  <h1>Application Info</h1>
+</header>
 
-<%= @application.pets.each do |pet| %>
-<section class="pet-<%= pet.id %>">
-  <%= link_to "#{pet.name}", "/pets/#{pet.id}" %>
-  <% if pet.adoption_status == "Pending" %>
-  <%= link_to "Unapprove Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%>
-  <p>This pet is no longer adoptable</p>
-  <% else pet.adoption_status == "Adoptable" %>
-  <%= link_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%>
+<section class="showpage">
+    <% @application.pets.each do |pet| %>
+    <div class="petindex">
+    <section class="pet-<%= pet.id %>">
+      <p class="name"><%= link_to "APPLICATION FOR: #{pet.name}", "/pets/#{pet.id}" %></p>
+      <% if pet.adoption_status == "Pending" && @application.name == pet.applicant_name(pet.id) %>
+      <p><%= link_to "Unapprove Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%></p>
+      <% elsif pet.adoption_status == "Pending" %>
+      <p>This pet is no longer adoptable</p>
+      <% else pet.adoption_status == "Adoptable" %>
+      <p><%= link_to "Approve Application For #{pet.name}", "/applications/#{@application.id}/#{pet.id}", method: :patch%></p>
+      <% end %>
+      </section>
+      </div>
+
+      <div class="applicantinfo">
+      <p class="attribute">Applicant Name:</p>
+      <h2><%= @application.name %></h2>
+      <p class="attribute">Address:</p>
+      <h2><%= @application.address %></h2>
+      <p class="attribute">City:</p>
+      <h2><%= @application.city %></h2>
+      <p class="attribute">State:</p>
+      <h2><%= @application.state %></h2>
+      <p class="attribute">Zip Code:</p>
+      <h2><%= @application.zip %></h2>
+      <p class="attribute">Phone Number:</p>
+      <h2><%= @application.phone_number %></h2>
+      <p class="attribute">Description:</p>
+      <h2><%= @application.description %></h2>
+      </div>
+
   <% end %>
 </section>
-<% end %>

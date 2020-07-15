@@ -1,36 +1,40 @@
-<head>
-  <link rel="stylesheet" href="assets/stylesheets/pet.css" title="text/css" />
-</head>
-<body id="pet_show">
-
   <header>
     <h1><%= @pet.name.upcase %></h1>
-</header>
+  </header>
 
-<div><%= image_tag(@pet.image, method: :get) %></div>
+  <section class="showpage"
 
-<div id="attributes">
-  <ul>
-    <li>NAME:<p><%= @pet.name %></p></li>
-    <li>DESCRIPTION: <p><%= @pet.description %></p></li>
-    <li>APPROXIMATE AGE:<p> <%= @pet.approx_age %></p></li>
-    <li>SEX: <p><%= @pet.sex %></p></li>
-    <li>ADOPTION STATUS: <p><%= @pet.adoption_status %></p></li>
-  </ul>
-  <h5><%= link_to "EDIT #{@pet.name.upcase}'S INFO", "#{@pet.id}/edit"  %></h5>
+  <div><%= image_tag(@pet.image, method: :get) %></div>
+
+<div>
+    <p class="attribute">NAME:<h3><%= @pet.name %></h3>
+    <p class="attribute">DESCRIPTION: <h3><%= @pet.description %></h3>
+    <p class="attribute">APPROXIMATE AGE:<h3> <%= @pet.approx_age %></h3>
+    <p class="attribute">SEX: <h3><%= @pet.sex %></h3>
+    <p class="attribute">ADOPTION STATUS: <h3><%= @pet.adoption_status %></h3>
+
+  <h5 class="linktoinfo"><%= link_to "EDIT #{@pet.name.upcase}'S INFO", "#{@pet.id}/edit"  %></h5>
+
+  <div class="adoptionstatus">
   <% if @pet.adoption_status == "Pending" %>
-  <p>This pet is unable to be deleted at this time</p>
+  <h5>This pet is unable to be deleted at this time</h5>
   <% else @pet.adoption_status == "Adoptable" %>
-  <h5><%= link_to "DELETE #{@pet.name.upcase}", "#{@pet.id}", method: :delete%></h5>
+
+  <h5 class="linktoinfo"><%= link_to "DELETE #{@pet.name.upcase}", "#{@pet.id}", method: :delete%></h5>
   <% end %>
-</div>
-<% if @pet.favorites.empty? == false %>
-  <h5><%= link_to "Remove me from your favorites", "/favorites/#{@pet.id}", method: :delete %></h5>
+  </div>
+
+  <% if @pet.favorites.empty? == false %>
+  <h5 class="linktoinfo"><%= link_to "Remove me from your favorites", "/favorites/#{@pet.id}", method: :delete %></h5>
   <% else %>
-  <h5><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
+  <h5 class="linktoinfo"><%= link_to "FAVORITE ME", "#{@pet.id}/favorites", method: :post %></h5>
   <% end %>
-  <%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %>
+
+  <h5 class="linktoinfo"><%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %></h5>
   <% if @pet.has_pending_applications %>
-  On hold for <%= link_to "#{@pet.applicant_name}", "/applications/#{@pet.applicant_id}"%>
+  <h5 class="onhold">This Pet Is On hold for:
+  <%= link_to "#{@pet.applicant_name}", "/applications/#{@pet.applicant_id}"%></h5>
   <% end %>
-</body>
+
+  </div>
+</section>

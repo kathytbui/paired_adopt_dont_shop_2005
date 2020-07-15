@@ -1,7 +1,16 @@
-<h1>Adopt a new pet!</h1>
-Pets available for adoption from your favorites!
+<header>
+<h1>Adopt a new pet</h1>
+<p>Pets available for adoption from your favorites!</p>
+</header>
+
+
 <%= form_tag "/applications", method: :post do %>
+<p class="application-form-header">SELECT THE PETS YOU'D LIKE TO ADOPT</p>
+<div class="checkbox">
 <%= collection_check_boxes(:favorite, :pet_id, @favorites.pets, :id, :name) %>
+</div>
+<p>
+<section class="editform">
 <%= label_tag :name %>
 <%= text_field_tag :name %>
 <%= label_tag :address %>
@@ -18,3 +27,4 @@ Pets available for adoption from your favorites!
 <%= text_field_tag :description %>
 <%= submit_tag "Submit Application" %>
 <% end %>
+</section>

@@ -45,8 +45,8 @@ RSpec.describe "Shelters show page" do
 
   it "displays shelters statistics" do
     visit "/shelters/#{@cozy_kitten.id}"
-    expect(page).to have_content("Number of pets at this shelter: 1")
-    expect(page).to have_content("Average shelter review rating: 3")
-    expect(page).to have_content("Number of applications on file for shelter: 1")
+    expect(page).to have_content("Number of pets at this shelter:")
+    expect(page).to have_content("Average shelter review rating:")
+    expect(page).to have_content("Number of applications on file for shelter:")
   end
 end
