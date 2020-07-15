@@ -13,7 +13,7 @@
   </p>
 
   <p class="deletelink">
-    <% if shelter.has_pending_pets(shelter.id) %>
+    <% if shelter.has_pending_pets %>
       <%= shelter.name %> has pending pets for adoption!
     <% else %>
       <%= link_to "DELETE #{shelter.name}", "/shelters/#{shelter.id}", method: :delete %>

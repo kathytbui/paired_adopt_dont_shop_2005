@@ -31,11 +31,11 @@ describe Shelter, type: :model do
     end
 
     it "#application_count" do
-      expect(@cozy_kitten.applications_count(@cozy_kitten.id)).to eq(5)
+      expect(@cozy_kitten.applications_count).to eq(5)
     end
 
     it "#has_pending_pets" do
-      expect(@cozy_kitten.has_pending_pets(@cozy_kitten.id)).to eq(true)
+      expect(@cozy_kitten.has_pending_pets).to eq(true)
     end
   end
 end

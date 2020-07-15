@@ -26,5 +26,4 @@ RSpec.describe "Pet applications index page" do
     visit "/pets/#{@cat1.id}/applications"
     expect(page).to have_link("#{@application1.name}")
   end
-
 end

@@ -7,7 +7,6 @@
     <h2 class="name">Shelter Reviews</h2>
     <h5 class="linktoinfo"><%= link_to "CREATE NEW REVIEW", "#{@shelter.id}/reviews/new"%></h5>
 
-
     <% @shelter.reviews.each do |review| %>
       <p class="attribute">Title:</p> <h3><%= review.title %></h3>
       <p class="attribute">Rating: </p> <h3><%= review.rating %></h3>
@@ -33,7 +32,7 @@
 
     <section class="delete-shelter">
     <div class="linktoinfo"
-    <% if @shelter.has_pending_pets(@shelter.id) %>
+    <% if @shelter.has_pending_pets %>
     <h5><%= @shelter.name %> has pending pets for adoption</h5>
     <% else %>
     <h5><%= link_to "DELETE SHELTER", "/shelters/#{@shelter.id}", method: :delete %></h5>
@@ -51,7 +50,7 @@
     <p class="attribute">Average shelter review rating:</p>
     <h3><%= @shelter.reviews.average_rating %></h3>
     <p class="attribute">Number of applications on file for shelter:
-      <h3><%= @shelter.applications_count(@shelter.id) %></h3>
+      <h3><%= @shelter.applications_count %></h3>
 
 
 </section>

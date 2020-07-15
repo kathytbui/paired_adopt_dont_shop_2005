@@ -31,9 +31,9 @@
   <% end %>
 
   <h5 class="linktoinfo"><%= link_to "View All Applications", "/pets/#{@pet.id}/applications" %></h5>
-  <% if @pet.applicant_name(@pet.id).nil? == false && @pet.adoption_status == "Pending" %>
+  <% if @pet.has_pending_applications %>
   <h5 class="onhold">This Pet Is On hold for:
-  <%= link_to "#{@pet.applicant_name(@pet.id)}", "/applications/#{@pet.applicant_id(@pet.id)}"%></h5>
+  <%= link_to "#{@pet.applicant_name}", "/applications/#{@pet.applicant_id}"%></h5>
   <% end %>
 
   </div>
